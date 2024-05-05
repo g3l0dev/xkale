@@ -1,0 +1,47 @@
+---
+import { Icon } from "astro-icon/components";
+import Btn from "../../Btn.astro";
+import SectionContainer from "../../SectionContainer.astro";
+---
+
+<SectionContainer class="xl:pb-[3.25rem] xl:h-[85vh]">
+  <div class="grid xl:grid-cols-2 xl:grid-rows-1 xl:gap-x-4 h-full">
+    <div>
+      <div class="bg-cx py-5 px-4">
+        <h2
+          class="text-balance text-white block leading-[1.3em] text-xl uppercase font-bold">
+          crm de servicios
+        </h2>
+      </div>
+      <div
+        transition:name="crnm"
+        transition:animate="fade"
+        class="bg-[url('/image/cx/CRM.webp')] bg-center bg-cover bg-no-repeat h-full overflow-hidden group">
+        <a
+          href="#"
+          class="w-6/12 h-full bg-cx/50 flex flex-col justify-center items-center text-white text-xl -translate-x-full group-hover:translate-x-0 duration-500">
+          <Icon name="message" class="size-14" />
+        </a>
+      </div>
+    </div>
+    <div class="flex flex-col justify-center px-28">
+      <p class="text-pretty text-4xl text-xkale my-4 py-2 block">
+        Conoce a profundidad a<strong class="font-bold">tu cliente.</strong>
+      </p>
+      <p class="text-pretty text-xl my-4 py-2">
+        En <strong class="font-bold">Xkale</strong> te ayudamos a resolver de manera
+        ágil y oportuna los requerimientos de tus clientes, a través de una experiencia
+        omnicanal, mejorando la calidad del servicio que recibe.
+      </p>
+      <p class="text-pretty text-xl my-4 py-2">
+        Impacta en las cifras de tu empresa, gestionando apropiadamente los
+        procesos de atención.
+      </p>
+      <Btn
+        href="/contacto"
+        class="inline self-start shadow-lg"
+        text="Agenda con un consultor"
+      />
+    </div>
+  </div>
+</SectionContainer>

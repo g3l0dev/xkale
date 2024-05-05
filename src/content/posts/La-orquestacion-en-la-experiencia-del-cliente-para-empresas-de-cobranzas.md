@@ -1,0 +1,48 @@
+---
+title: "La orquestación en la Experiencia del cliente para Empresas de Cobranzas"
+image:
+  {
+    src: "/image/posts/Orquestacion-en-la-Experiencia-del-cliente-Oportunidad-para-Entidades-Financieras-y-Empresas-de-Cobranzas-1024x683.webp",
+    alt: "antivirus",
+  }
+description: "En un mundo empresarial cada vez más competitivo, comprender las necesidades y deseos de los clientes se ha convertido en una prioridad indiscutible para las empresas que buscan destacarse en el sector bancario y de cobranzas"
+date: 2024-03-26
+draft: false
+author: "Juan Diego Astudillo"
+authorImage: "/image/authors/juan-d-astudillo.webp"
+tag: ["cxporsectores"]
+---
+
+En un mundo empresarial cada vez más competitivo, comprender las necesidades y deseos de los clientes se ha convertido en una prioridad indiscutible para las empresas que buscan destacarse en el sector bancario y de cobranzas
+
+Sin embargo, la simple recopilación de datos o el despliegue de información por diferentes canales (WhatsApp, correo electrónico, chatbots) ya no es suficiente. Es necesario ir más allá, captando lo que el cliente requiere y está dispuesto a hacer y de esta forma poder predecir su accionar y de esta forma poder brindar una experiencia diferenciadora completa y personalizada que se traducirá en el incremento de las cifras de éxito en la gestión de cobro.
+
+Las plataformas diseñadas para orquestar la experiencia del cliente no solo integran tecnologías, sino que también centran su enfoque en el cliente mismo, entendiendo su propio viaje de compra o lo que conocemos como su “journey”. Estas plataformas se convierten en una especie de maestro de ceremonias, fusionando todos los datos de los clientes en una única «identidad integrada», permitiendo a las empresas de cobros persuasivos ofrecer niveles extraordinarios de personalización.
+
+## Vislumbrando el éxito en cobranzas con la Experincia del Cliente
+
+La integración de datos es el eje principal de esta práctica. Al reunir datos de múltiples canales y asociarlos a una única plataforma, las empresas pueden obtener una visión completa y detallada de sus journeys. Cuanta más información se tenga, más efectiva será la orquestación de la experiencia del cliente.
+
+### Pero, ¿Cómo se logra esta orquestación?
+
+No es solo hablar de un tema de tecnología, se trata de un proceso meticuloso que involucra talento, proceso y metodologías.
+
+Quieres conocer cómo poder aplicar esta metodología para tu empresa del sector financiera o cobranzas
+
+Haz click aquí y agenda una reunión con uno de nuestros expertos
+
+Conoce cuáles son los pasos fundamentales para una orquestación de la experiencia del cliente en tu empresa de cobros
+
+1. Se accede a diversas fuentes de datos sobre la identidad del cliente.
+2. Estos datos se integran hábilmente para crear una visión unificada.
+3. La siguiente etapa implica anticipar el momento y la forma más adecuada de interactuar con el cliente durante su proceso.
+4. Por último, la ejecución de estas interacciones debe ser sofisticada, combinando métodos de autoservicio con inteligencia artificial y asistencia humana de manera equilibrada.
+   Finalmente, es crucial aprender de los resultados obtenidos. Este aprendizaje continuo permite mejorar el engagement del cliente en futuros journeys, cerrando así el ciclo de la orquestación de manera efectiva.
+
+Unir e integrar son los pilares sobre los que se construye el éxito en esta práctica.
+
+En resumen, la orquestación de la experiencia del cliente va más allá de la simple tecnología o recopilación de datos.
+
+Es un proceso multifacético que requiere un enfoque integrado y una comprensión profunda de las necesidades y deseos de los clientes.
+
+Aquellas empresas de cobranzas que dominen esta práctica estarán en una posición privilegiada frente a su competencia, ofreciendo experiencias verdaderamente personalizadas y excepcionales, marcando así la diferencia en un mercado cada vez más competitivo.

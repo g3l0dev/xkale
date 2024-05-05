@@ -1,0 +1,10 @@
+---
+
+interface Props {
+  class?: string;
+}
+---
+
+<div class={`${Astro.props.class} group col-span-5 row-span-5 overflow-hidden`}>
+  <slot />
+</div>

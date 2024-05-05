@@ -1,0 +1,36 @@
+---
+import SectionContainer from "../SectionContainer.astro";
+---
+
+<SectionContainer class="flex flex-wrap xl:py-[3.25rem]">
+  <div class="grupo">
+    <div class="w-full">
+      <p class="text-pretty text-4xl text-xkale mb-6">
+        Agéndate con uno de nuestros consultores en <strong class="font-bold"
+          >experiencia al cliente y ciberseguridad</strong
+        > quienes te guiarán por camino de la transformación.
+      </p>
+      <p class="text-pretty text-4xl text-xkale">
+        En <strong class="font-bold">Xkale</strong> solucionamos el problema de mañana,
+        hoy
+      </p>
+    </div>
+    <div class="w-full flex flex-col items-start">
+      <div class="_form_1"></div><script
+        src="https://xkale.activehosted.com/f/embed.php?id=1"
+        charset="utf-8"></script>
+    </div>
+  </div>
+</SectionContainer>
+
+<style lang="scss">
+  .grupo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    place-content: center;
+    @media (1440px <= width <= 2560px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

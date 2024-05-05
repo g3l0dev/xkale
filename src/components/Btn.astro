@@ -1,0 +1,15 @@
+---
+interface Props {
+  href: string;
+  text: string;
+  class?: string;
+  rel?: string;
+  target?: string;
+}
+const { href, text } = Astro.props as Props;
+---
+
+<a
+  class={`${Astro.props.class} uppercase text-xl px-5 py-2 bg-[#67D42F] text-white shadow-xl`}
+  href={href}>{text}</a
+>

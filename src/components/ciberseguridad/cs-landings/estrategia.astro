@@ -1,0 +1,43 @@
+---
+import { Icon } from "astro-icon/components";
+import Btn from "../../Btn.astro";
+import SectionContainer from "../../SectionContainer.astro";
+---
+
+<SectionContainer class="xl:pb-[3.25rem] xl:h-[85vh]">
+  <div class="grid xl:grid-cols-2 xl:grid-rows-1 xl:gap-x-4 h-full">
+    <div>
+      <div class="bg-cs py-5 px-4">
+        <h2
+          class="text-balance text-white block leading-[1.3em] text-xl uppercase font-bold">
+          estrategias de Ciberseguridad
+        </h2>
+      </div>
+      <div
+        class="bg-[url('/image/cs/ciber-1.webp')] bg-center bg-cover bg-no-repeat h-full overflow-hidden group">
+        <a
+          href="/contacto"
+          class="w-6/12 h-full bg-cs/50 flex flex-col justify-center items-center text-white text-xl -translate-x-full group-hover:translate-x-0 duration-500">
+          <Icon name="message" class="size-14" />
+        </a>
+      </div>
+    </div>
+    <div class="flex flex-col justify-center px-28">
+      <p class="text-pretty text-xl my-4 py-2">
+        Diseñamos y ejecutamos estrategias personalizadas de ciberseguridad,
+        probadas en el mercado y de rápido retorno, anticipado a amenazas y
+        fortaleciendo tu entorno digital en constante cambio.
+      </p>
+      <p class="text-pretty text-4xl text-xkale my-4 py-2 block">
+        Blindamos tu modelo de <strong class="font-bold">negocio</strong> para reducir
+        los riesgos digitales y maximizar la resiliencia de tu organización.
+      </p>
+
+      <Btn
+        href="/contacto"
+        class="inline self-start shadow-lg"
+        text="Agenda con un consultor"
+      />
+    </div>
+  </div>
+</SectionContainer>

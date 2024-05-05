@@ -1,0 +1,56 @@
+---
+import FormattedDate from "../components/formatted-date.astro";
+import { formatDate, slugify } from "../js/utils";
+// const { posts } = Astro.props;
+
+
+
+
+// const { frontmatter, url, tagType } = Astro.props;
+
+
+interface Props {
+  url: string;
+  title: string;
+  image: {
+    src: string;
+    alt: string;
+  };
+  description: string;
+  authorImage: string;
+ author: string;
+  tag: string;
+}
+
+const { url, title, image, description, authorImage,author, tag } =
+  Astro.props;
+---
+
+<article
+  class="w-full rounded-xl overflow-hidden"
+  aria-hidden="true"
+  tabindex="-1">
+  <div class="h-[50%] overflow-hidden">
+    <a class="w-full" href={url}>
+      <img class="object-cover" src={image.src} alt={image.alt} />
+    </a>
+  </div>
+  <div class="h-[10%] flex justify-between items-center px-4">
+    <img src="" alt="logo" />
+    <p class="uppercase text-xs">{`#${tag}`}</p>
+  </div>
+  <div class="h-[30%] px-4">
+    <h2 class="font-bold text-lg">{title}</h2>
+    <p class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[1000px]">
+      {description}
+    </p>
+  </div>
+  <div class="h-[1%] px-4 flex gap-x-5 items-center">
+    <figure class="size-12 overflow-hidden rounded-full">
+      <img class="w-full h-full object-cover" src={authorImage} alt={author} />
+    </figure>
+    <p>{author}</p>
+  </div>
+</article> 
+
+ <!-- <a href={`/author/${slugify(author)}/`} aria-hidden="true" tabindex="-1">{author}</a> -->

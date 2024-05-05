@@ -1,0 +1,46 @@
+---
+import Link from "./Link.astro";
+
+const { prevUrl, nextUrl, length, currentPage, firstUrl } = Astro.props;
+const paginationList = Array.from({ length }, (_, i) => i + 1);
+---
+
+<nav aria-label="Blog pages">
+  {
+    prevUrl && (
+      <Link
+        class="flex items-center gap-x-2"
+        text="Previous"
+        href={prevUrl}
+        icon={{ name: "chevron-left", side: "left" }}
+        data-navLink
+      />
+    )
+  }
+  {
+    paginationList?.map((num) => (
+      <li>
+        <a
+          href={`${firstUrl}${num == 1 ? "" : "" + num}`}
+          class={`block h-8 w-8 rounded border text-center leading-8 text-zinc-900 dark:text-white ${
+            currentPage == num
+              ? "border-indigo-600 bg-indigo-500 !text-white"
+              : ""
+          }`}>
+          {num}
+        </a>
+      </li>
+    ))
+  }
+  {
+    nextUrl && (
+      <Link
+        class="flex items-center gap-x-2"
+        text="Next"
+        href={nextUrl}
+        icon={{ name: "chevron-right", side: "right" }}
+        data-navLink
+      />
+    )
+  }
+</nav>
