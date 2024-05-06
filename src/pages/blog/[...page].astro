@@ -27,12 +27,13 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 ---
 
-<Layout title="Blog">
+<Layout
+  title="Blog"
+  description="Entérate aquí de todas las tendencias en Customer Experience y Ciberseguridad.">
   <Headding text="Blog" />
   <BlogHelo />
   <SectionContainer class="xl:py-14" aria-label="New Blog Posts">
     <div class="grid gap-4 xl:grid-cols-3 mb-10">
-
       {
         page.data.map((post) => (
           <PostCard
