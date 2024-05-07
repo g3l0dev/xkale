@@ -14,7 +14,7 @@ import GoogleAnalitycs from "../data/googleAnalitycs.astro";
   <head>
     <GoogleAnalitycs />
     <meta charset="utf-8" />
-    
+
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <title>{title}</title>
@@ -25,28 +25,29 @@ import GoogleAnalitycs from "../data/googleAnalitycs.astro";
       <slot />
     </main>
     <Footer />
-  </body>
-  <style is:global>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      border: 0;
-      position: relative;
-    }
+    <style is:global>
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      text-wrap: balance;
-    }
-    p {
-      text-wrap: pretty;
-      margin-block-end: 1rem;
-      margin-block-start: 1rem;
-    }
-  </style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 0;
+        position: relative;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-wrap: balance;
+      }
+      p {
+        text-wrap: pretty;
+        margin-block-end: 1rem;
+        margin-block-start: 1rem;
+      }
+    </style>
+  </body>
 </html>

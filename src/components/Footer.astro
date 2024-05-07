@@ -17,7 +17,7 @@ import Link from "./Link.astro";
       {FOOTERDATA.map((item) => <Link text={item.name} href={item.path} />)}
     </nav>
   </section>
-  <section>
+  <section class="contact">
     <h3 class="text-2xl text-xkale font-bold">Contacto</h3>
     <ul>
       {
@@ -34,6 +34,7 @@ import Link from "./Link.astro";
   <section>
     <nav class="flex gap-x-4">
       <Link
+        aria-label="redes sociales"
         class="text-3xl hover:text-xkale"
         target="_blank"
         rel="noopener noreferrer"
@@ -41,6 +42,7 @@ import Link from "./Link.astro";
         icon={{ name: "linkedin", side: "left" }}
       />
       <Link
+        aria-label="redes sociales"
         class="text-3xl hover:text-xkale"
         href="https://www.youtube.com/@xkale_"
         target="_blank"
@@ -48,6 +50,7 @@ import Link from "./Link.astro";
         icon={{ name: "youtube", side: "left" }}
       />
       <Link
+        aria-label="redes sociales"
         class="text-3xl hover:text-xkale"
         href="https://www.instagram.com/xkaletm/"
         target="_blank"
@@ -70,7 +73,10 @@ import Link from "./Link.astro";
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (1440px <= width < 1920px) {
+    @media (width >= 1280px) {
+      padding-inline: 3.75rem;
+    }
+    @media (width >= 1440px) {
       padding-inline: 7.5rem;
     }
     &-title {
@@ -90,7 +96,14 @@ import Link from "./Link.astro";
     background: #000;
     color: #fff;
     padding: 1rem;
-    @media (1440px <= width < 1920px) {
+    @media (width >= 1280px) {
+      padding-inline: 3.75rem;
+      padding-block: 1.75rem;
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+      column-gap: 3.5rem;
+    }
+    @media (width >= 1440px) {
       display: grid;
       grid-template-columns: repeat(3, 300px);
       column-gap: 3.5rem;
@@ -106,6 +119,11 @@ import Link from "./Link.astro";
       display: flex;
       flex-flow: column;
       gap: 0.5rem;
+    }
+  }
+  .contact {
+    @media (width <= 992px) {
+      width: 300px;
     }
   }
 </style>
