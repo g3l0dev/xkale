@@ -1,0 +1,22 @@
+---
+import { Icon } from "astro-icon/components";
+import FormattedData from "./formatted-data.astro";
+
+const { title, date, author } = Astro.props;
+---
+
+<div
+  class="bg-escudo flex flex-col h-[85vh] p-4 xl:h-[70vh] xl:px-[7.5rem] xl:py-[3.25rem]">
+  <div class="flex flex-col items-center">
+    <div class="max-w-[1000px]">
+      <h1 class="block text-5xl mb-[0.67em] font-bold isolate">
+        {title}
+      </h1>
+      <div class="flex gap-x-20">
+        <p class="font-bold text-xl my-[1em]">Publicado: <FormattedData date={date} /></p>
+        <p class="font-bold text-xl my-[1em]"> Por: {author}</p>
+      </div>
+    </div>
+  </div>
+  <Icon name="T_N" class="text-[150px] text-white justify-self-end items-end" />
+</div>
