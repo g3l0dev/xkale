@@ -10,7 +10,7 @@ import Nav from "../components/Nav.astro";
 import GoogleAnalitycs from "../data/googleAnalitycs.astro";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <GoogleAnalitycs />
@@ -27,6 +27,13 @@ import GoogleAnalitycs from "../data/googleAnalitycs.astro";
     </main>
     <Footer />
     <style is:global>
+      @font-face {
+        font-family: "Public Sans";
+        src: url("/fonts/PublicSans-VariableFont_wght.ttf")format("truetype");
+      }
+      body{
+        font-family: "Public Sans";
+      }
       * {
         margin: 0;
         padding: 0;
