@@ -11,7 +11,6 @@ import Layout from "../../layouts/Layout.astro";
 import Pagination from "../../components/pagination.astro";
 import PostCard from "../../components/PostCard.astro";
 import SectionContainer from "../../components/SectionContainer.astro";
-import BlobHeader from "../../components/blob-header.astro";
 
 export async function getStaticPaths({ paginate }) {
   const allPosts = await getCollection("posts");
@@ -24,11 +23,11 @@ export async function getStaticPaths({ paginate }) {
   // return paginate(formattedPosts, { pageSize: 6 });
 }
 const { page } = Astro.props;
-
 ---
 
-<Layout title="Blog">
-  <Headding text="Blog" />
+<Layout
+  title="Blog">
+  <Headding text="Blog"/>
   <BlogHelo />
   <SectionContainer class="xl:py-14" aria-label="New Blog Posts">
     <div class="grid gap-4 xl:grid-cols-3 mb-10">

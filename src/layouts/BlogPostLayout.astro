@@ -1,17 +1,15 @@
 ---
-import { Icon } from "astro-icon/components";
+import type { CollectionEntry } from "astro:content";
+import BlobHeader from "../components/blob-header.astro";
 import Headding from "../components/Headding.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Layout from "./Layout.astro";
-import BlobHeader from "../components/blob-header.astro";
-import type { CollectionEntry } from "astro:content";
 
-type Props = CollectionEntry<'posts'>["data"];
-const {title, date, author} = Astro.props;
-
+type Props = CollectionEntry<"posts">["data"];
+const { title, date, author, description } = Astro.props;
 ---
 
-<Layout>
+<Layout title={`Blog | ${title}`} description={description}>
   <Headding text="Blog" />
   <BlobHeader {title} {date} {author} />
   <SectionContainer class="px-4 py-4 xl:py-[3.25rem]">

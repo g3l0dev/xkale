@@ -1,20 +1,21 @@
 ---
-interface Layout {
+interface Props {
   title: string;
   description?: string;
 }
 
-const { title, description } = Astro.props as Layout;
+const { title, description } = Astro.props;
 import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
 import GoogleAnalitycs from "../data/googleAnalitycs.astro";
 ---
 
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
     <GoogleAnalitycs />
     <meta charset="utf-8" />
-
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" media="" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <title>{title}</title>
@@ -26,7 +27,6 @@ import GoogleAnalitycs from "../data/googleAnalitycs.astro";
     </main>
     <Footer />
     <style is:global>
-
       * {
         margin: 0;
         padding: 0;
