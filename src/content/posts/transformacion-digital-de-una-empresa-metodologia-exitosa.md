@@ -10,6 +10,7 @@ draft: false
 author: "Adrian Molina"
 authorImage: "/image/authors/ADRIAN-MOLINA.webp"
 tag: ["ciberseguridad"]
+iconTag: "/image/iconBlog/icono-blog-cs.webp"
 ---
 
 Ciertamente, la aparición de nuevas tecnologías ha cambiado: Nuestra forma de trabajar, nuestra manera de realizar compras e incluso la forma en la que nos relacionamos. La necesidad en sumarse al proceso de **Transformación Digital de una Empresa** para poder evolucionar y no continuar con procesos de trabajo obsoletos y poco rentables. Si las empresas aprenden a utilizar correctamente estas tecnologías, obtendrán un gran potencial para generar nuevas oportunidades de negocio y abrirse a nuevos mercados.

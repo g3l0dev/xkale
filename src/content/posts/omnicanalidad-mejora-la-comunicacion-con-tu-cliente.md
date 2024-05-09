@@ -11,6 +11,7 @@ draft: false
 author: "Geovana Narvaez"
 authorImage: "/image/authors/GEOVANA-NARVAEZ.webp"
 tag: ["cx"]
+iconTag: "/image/iconBlog/icono-blog-cx.webp"
 ---
 Que tu empresa tenga presente la omnicanalidad es ideal para poder tener mejor comunicación y cercanía con los clientes que recurren a tus productos o servicios. 
 

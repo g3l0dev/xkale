@@ -11,6 +11,7 @@ draft: false
 author: "Francisco Soria"
 authorImage: "/image/authors/FRANCISCO-SORIA.webp"
 tag: ["cx"]
+iconTag: "/image/iconBlog/icono-blog-cx.webp"
 ---
 
 ¿Alguna vez has escuchado una queja sobre un paciente intentando comunicarse efectivamente con su servicio de salud? Ya sea una EPS (Entidad Promotora de Salud), alguna clínica o un servicio de salud en específico, no has sido el único. Según el Banco Interamericano de Desarrollo en América Latina, el 69% de los usuarios manifestaron que al momento de comunicarse con su servicio de salud, contaron con una mala experiencia del cliente por el servicio prestado.

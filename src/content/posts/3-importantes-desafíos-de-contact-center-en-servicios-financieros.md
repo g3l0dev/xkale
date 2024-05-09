@@ -11,6 +11,7 @@ draft: false
 author: "Juan Diego Astudillo"
 authorImage: "/image/authors/juan-d-astudillo.webp"
 tag: ["cx"]
+iconTag: "/image/iconBlog/icono-blog-cx.webp"
 ---
 
 ![3 importantes desafios de contact center en servicios financieros](/image/posts/3-Importantes-Desafios-de-Contact-Center-en-Servicios-Financieros-1024x576.webp)

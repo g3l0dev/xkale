@@ -11,6 +11,7 @@ draft: true
 author: "Tito Casamen"
 authorImage: "/image/authors/tito-casamen.webp"
 tag: ["cx"]
+iconTag: "/image/iconBlog/icono-blog-cx.webp"
 ---
 Actualmente, la relación con el cliente es uno de los principales retos de cualquier empresa para mantener una buena reputación. No solamente es primordial conseguir clientes, sino tener la capacidad de cuidar y fidelizar los clientes que ya se tienen. Muchas veces se descuidan a estos clientes recurrentes por querer buscar nuevos clientes, esto podría generar desconfianza tanto para los clientes que ya están, cómo para los que podrían llegar nuevos.
 

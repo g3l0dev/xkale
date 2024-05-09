@@ -1,13 +1,7 @@
 ---
-import FormattedDate from "../components/formatted-date.astro";
-import { formatDate, slugify } from "../js/utils";
 // const { posts } = Astro.props;
 
-
-
-
 // const { frontmatter, url, tagType } = Astro.props;
-
 
 interface Props {
   url: string;
@@ -18,25 +12,26 @@ interface Props {
   };
   description: string;
   authorImage: string;
- author: string;
+  author: string;
   tag: string;
+  iconTag: string;
 }
 
-const { url, title, image, description, authorImage,author, tag } =
+const { url, title, image, description, authorImage, author, tag, iconTag } =
   Astro.props;
 ---
 
 <article
-  class="w-full rounded-xl overflow-hidden"
+  class="w-full h-[550px] rounded-xl overflow-hidden shadow-2xl"
   aria-hidden="true"
   tabindex="-1">
   <div class="h-[50%] overflow-hidden">
-    <a class="w-full" href={url}>
-      <img class="object-cover" src={image.src} alt={image.alt} />
+    <a href={url}>
+      <img class="w-full h-full object-cover" src={image.src} alt={image.alt} />
     </a>
   </div>
   <div class="h-[10%] flex justify-between items-center px-4">
-    <img src="" alt="logo" />
+    <img  src={iconTag} alt="icon tags articles" />
     <p class="uppercase text-xs">{`#${tag}`}</p>
   </div>
   <div class="h-[30%] px-4">
@@ -51,6 +46,6 @@ const { url, title, image, description, authorImage,author, tag } =
     </figure>
     <p>{author}</p>
   </div>
-</article> 
+</article>
 
- <!-- <a href={`/author/${slugify(author)}/`} aria-hidden="true" tabindex="-1">{author}</a> -->
+<!-- <a href={`/author/${slugify(author)}/`} aria-hidden="true" tabindex="-1">{author}</a> -->
