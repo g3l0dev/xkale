@@ -1,0 +1,20 @@
+---
+interface Props {
+  text?: string;
+  href: string;
+  class?: string;
+  target?: string;
+  rel?: string;
+}
+
+const { text, href, target, rel, ...rest } = Astro.props as Props;
+---
+
+<a
+  href={href}
+  class={`${Astro.props.class} class="px-3 py-2 bg-xkale rounded-lg text-white uppercase shadow-lg"`}
+  target={target}
+  rel={rel}
+  {...rest}>
+  <span>{text}</span>
+</a>

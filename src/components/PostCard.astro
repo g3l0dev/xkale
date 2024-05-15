@@ -1,8 +1,4 @@
 ---
-// const { posts } = Astro.props;
-
-// const { frontmatter, url, tagType } = Astro.props;
-
 interface Props {
   url: string;
   title: string;
@@ -21,31 +17,69 @@ const { url, title, image, description, authorImage, author, tag, iconTag } =
   Astro.props;
 ---
 
-<article
-  class="w-full h-[550px] rounded-xl overflow-hidden shadow-2xl"
-  aria-hidden="true"
-  tabindex="-1">
-  <div class="h-[50%] overflow-hidden">
-    <a href={url}>
-      <img class="w-full h-full object-cover" src={image.src} alt={image.alt} />
-    </a>
-  </div>
-  <div class="h-[10%] flex justify-between items-center px-4">
-    <img  src={iconTag} alt="icon tags articles" />
-    <p class="uppercase text-xs">{`#${tag}`}</p>
-  </div>
-  <div class="h-[30%] px-4">
-    <h2 class="font-bold text-lg">{title}</h2>
-    <p class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[1000px]">
-      {description}
-    </p>
-  </div>
-  <div class="h-[1%] px-4 flex gap-x-5 items-center">
-    <figure class="size-12 overflow-hidden rounded-full">
-      <img class="w-full h-full object-cover" src={authorImage} alt={author} />
-    </figure>
-    <p>{author}</p>
-  </div>
-</article>
+<li class="">
+  <a href={url} class="block">
+    <article class="w-full shadow-2xl">
+      <div class="w-full overflow-hidden h-[300px]">
+        <img
+          class="w-full h-full object-cover"
+          src={image.src}
+          alt={image.alt}
+        />
+      </div>
+      <div class="flex justify-between px-4 py-3 h-[50px]">
+        <img src={iconTag} alt="" />
+        <span>{tag}</span>
+      </div>
+      <div class="px-4 py-3 h-[150px]">
+        <h3 class="font-bold text-lg">{title}</h3>
+        <p
+          class="text-nowrap overflow-hidden text-ellipsis max-w-[600px]"
+          id="texto">
+          {description}
+        </p>
+      </div>
+      <div class="flex justify-between px-4 py-3 items-center h-[50px]">
+        <figure class="size-8 rounded-full overflow-hidden">
+          <img
+            class="w-full h-full object-cover"
+            src={authorImage}
+            alt={author}
+          />
+        </figure>
+        <span class="capitalize font-semibold">{author}</span>
+      </div>
+    </article>
+  </a>
+</li>
 
-<!-- <a href={`/author/${slugify(author)}/`} aria-hidden="true" tabindex="-1">{author}</a> -->
+<style>
+  @tailwind components;
+  @layer components {
+    .paragraph {
+      @apply flex-nowrap overflow-hidden text-ellipsis max-w-[300px];
+    }
+  }
+</style>
+
+<script>
+  // No es necesario TypeScript específicamente para limitar el texto en una etiqueta <p>, ya que esto se puede hacer directamente con HTML y CSS. Sin embargo, si necesitas manipular el contenido dinámicamente con TypeScript, puedes hacerlo de esta manera:
+
+  // Obtener la etiqueta <p> por su id
+  const textoElement = document.getElementById("texto");
+
+  // Obtener el texto actual
+  let texto = textoElement.textContent;
+
+  // Verificar la longitud del texto
+  const maxCaracteres = 50; // Cambia este valor al máximo deseado
+  if (texto.length > maxCaracteres) {
+    // Limitar el texto a la cantidad máxima de caracteres
+    texto = texto.substring(0, maxCaracteres);
+    // Agregar puntos suspensivos al final del texto
+    texto += "...";
+  }
+
+  // Actualizar el contenido de la etiqueta <p>
+  textoElement.textContent = texto;
+</script>

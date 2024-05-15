@@ -17,7 +17,7 @@ export async function getStaticPaths({ paginate }) {
   const formattedPosts = allPosts.sort(
     (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
   );
-  return paginate(formattedPosts, { pageSize: 6 });
+  return paginate(formattedPosts, { pageSize: 9 });
   // const allPosts = await getCollection("blog");
   // const formattedPosts = formatBlogPosts(allPosts);
   // return paginate(formattedPosts, { pageSize: 6 });
@@ -25,12 +25,11 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 ---
 
-<Layout
-  title="Blog">
-  <Headding text="Blog"/>
+<Layout title="Blog">
+  <Headding text="Blog" />
   <BlogHelo />
   <SectionContainer class="xl:py-14" aria-label="New Blog Posts">
-    <div class="grid gap-4 xl:grid-cols-3 mb-10">
+    <ul class="grid grid-cols-1 grid-rows-auto  gap-4 lg:grid-cols-3 my-10">
       {
         page.data.map((post) => (
           <PostCard
@@ -45,7 +44,7 @@ const { page } = Astro.props;
           />
         ))
       }
-    </div>
+    </ul>
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
   </SectionContainer>
 </Layout>
