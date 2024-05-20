@@ -4,25 +4,59 @@ import BlobHeader from "../components/blob-header.astro";
 import Headding from "../components/Headding.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Layout from "./Layout.astro";
+import { Icon } from "astro-icon/components";
+import Sharer from "../components/Sharer.astro";
 
 type Props = CollectionEntry<"posts">["data"];
-const { title, date, author, description } = Astro.props;
+const { title, date, author, description} = Astro.props;
 ---
 
 <Layout title={`Blog | ${title}`} description={description}>
   <Headding text="Blog" />
   <BlobHeader {title} {date} {author} />
   <SectionContainer class="px-4 py-4 xl:py-[3.25rem]">
-    <div class="flex flex-col py-4 xl:flex-row gap-x-4">
-      <div
-        class="xl:w-[80%] max-w-none prose prose-a:no-underline prose-p:text-xl prose-h1:font-bold prose-h1:text-balance prose-h1:text-xkale prose-h1:text-5xl prose-h2:text-balance prose-h2:text-xkale prose-h2:text-3xl prose-h2:uppercase prose-h3:text-xkale prose-h3:text-2xl prose-h3:uppercase">
-        <slot />
+    <div class="flex flex-col py-4 lg:flex-row gap-x-4">
+      <div>
+        <div
+          class="lg:w-[80%] max-w-none prose prose-a:no-underline prose-p:text-xl prose-h1:font-bold prose-h1:text-balance prose-h1:text-xkale prose-h1:text-5xl prose-h2:text-balance prose-h2:text-xkale prose-h2:text-3xl prose-h2:uppercase prose-h3:text-xkale prose-h3:text-2xl prose-h3:uppercase mb-7">
+          <slot />
+        </div>
       </div>
       <aside
-        class="xl:w-[20%] flex flex-col items-center"
+        class="lg:w-[20%] flex flex-col items-center"
         aria-label="Categorías">
-        <h2 class="my-[0.83rem] text-3xl font-bold">Sugerencias</h2>
-        <!-- <CategoyCloud showCount={true} /> -->
+        <div>
+          <h3
+            class="block text-3xl text-xkale my-[1em] font-bold isolate text-balance text-center">
+            Comparte en redes sociales
+          </h3>
+          <div class="flex gap-x-4 justify-center items-center">
+            <!-- <Sharer /> -->
+
+          
+
+            <!-- <a href="#">
+              <Icon name="linkedin" class="text-xl hover:text-xkale" />
+            </a>
+            <a href="#"
+              ><Icon name="twitter" class="text-xl hover:text-xkale" /></a
+            > -->
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col justify-center items-center p-9 rounded-xl shadow-lg">
+          <h3 class="text-xkale block text-2xl my-4 font-bold isolate">
+            Suscribete a nuestro newsletter
+          </h3>
+          <p>
+            Suscribete a nuestro newsletter para estar al tanto de todas
+            nuestras novedades.
+          </p>
+          <div class="_form_3"></div><script
+            src="https://xkale.activehosted.com/f/embed.php?id=3"
+            charset="utf-8"></script>
+        </div>
       </aside>
     </div>
   </SectionContainer>

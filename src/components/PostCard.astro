@@ -18,11 +18,11 @@ const { url, title, image, description, authorImage, author, tag, iconTag } =
 ---
 
 <li class="">
-  <a href={url} class="block">
+  <a href={url} class="block group">
     <article class="w-full shadow-2xl">
       <div class="w-full overflow-hidden h-[300px]">
         <img
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover group-hover:scale-110 duration-[0.3s]"
           src={image.src}
           alt={image.alt}
         />
@@ -39,7 +39,7 @@ const { url, title, image, description, authorImage, author, tag, iconTag } =
           {description}
         </p>
       </div>
-      <div class="flex justify-between px-4 py-3 items-center h-[50px]">
+      <div class="flex gap-x-4 px-4 py-3 items-center h-[50px]">
         <figure class="size-8 rounded-full overflow-hidden">
           <img
             class="w-full h-full object-cover"

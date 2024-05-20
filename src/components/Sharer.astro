@@ -1,0 +1,32 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  url?: string;
+}
+
+const { url } = Astro.props;
+
+const urlToShare = url || Astro.url;
+
+let shared_article = Astro.params.articleId;
+---
+
+<a
+  href={`"https://www.facebook.com/sharer/sharer.php?u=https%3A//xkale.com/posts/${shared_article}"`}
+  target="_blank">
+  <Icon name="facebook" class="text-xl hover:text-xkale" />
+</a>
+
+<a
+  href="https://www.facebook.com/sharer/sharer.php?u=https%3A//xkale.com/posts/superando-retos-en-gestion-de-cobranzas-mediante-la-orquestacion-multicanal/"
+  >Share on Facebook</a
+>
+
+<script></script>
+
+<a
+  href="//www.facebook.com/sharer/sharer.php?u={{ shared_article }}"
+  target="$_blank">
+  <span>Share on Facebook</span>
+</a>

@@ -2,9 +2,13 @@
 interface Props {
   title: string;
   description?: string;
+  image?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
 import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
 import GoogleAnalitycs from "../data/googleAnalitycs.astro";
@@ -15,10 +19,27 @@ import GoogleAnalitycs from "../data/googleAnalitycs.astro";
   <head>
     <GoogleAnalitycs />
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" media="" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- conditional url -->
+    <link rel="conditional" href={canonicalURL} />
+    <!-- primary meta tags -->
     <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <!-- open graph/ facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.url)} />
+    <!-- twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.url)} />
   </head>
   <body>
     <Nav />
@@ -29,9 +50,9 @@ import GoogleAnalitycs from "../data/googleAnalitycs.astro";
     <style is:global>
       @font-face {
         font-family: "Public Sans";
-        src: url("/fonts/PublicSans-VariableFont_wght.ttf")format("truetype");
+        src: url("/fonts/PublicSans-VariableFont_wght.ttf") format("truetype");
       }
-      body{
+      body {
         font-family: "Public Sans";
       }
       * {
