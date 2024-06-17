@@ -12,6 +12,7 @@ author: "Alejandro Bonilla"
 authorImage: "/image/authors/alejandro-bonilla.webp"
 tag: ["cx"]
 iconTag: "/image/iconBlog/icono-blog-cx.webp"
+url: "customer-experience-y-el-poder-del-conocimiento"
 ---
 
 El conocimiento, así como el universo, se expanden constantemente, la incesante búsqueda y necesidad de controlarlo, compartirlo y utilizarlo para bien o mal es cada día más urgente. El libro Talmud cita: “Quien no añade nada a sus conocimientos, los disminuye”, como es de costumbre los libros guardan una gran lección para el futuro ¿disminuye la calidad, la eficiencia y la eficacia de su empresa por no gestionar bien el conocimiento? Se espera que el mercado del conocimiento y el customer experience, concretamente la gestión del conocimiento, alcance los 1,1 billones de dólares en 2026.

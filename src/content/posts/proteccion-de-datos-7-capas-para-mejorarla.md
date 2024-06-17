@@ -12,6 +12,7 @@ author: "Victor Torres"
 authorImage: "/image/authors/VICTOR-TORRES.webp"
 tag: ["ciberseguridad"]
 iconTag: "/image/iconBlog/icono-blog-cs.webp"
+url: "proteccion-de-datos-7-capas-para-mejorarla"
 ---
 Los datos se han convertido en algo crucial para el éxito y la supervivencia de casi cualquier empresa en el mundo actual. Cuando se roban los datos, incluso las empresas más exitosas pueden verse abocadas a la quiebra. La protección de datos en los sistemas digitales es difícil porque hay una amplia gama de amenazas conocidas y desconocidas que pueden conducir a una violación de los datos. Las empresas que quieren tener la protección de datos asegurada suelen utilizarlo por capas.
 

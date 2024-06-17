@@ -4,27 +4,48 @@ import BlobHeader from "../components/blob-header.astro";
 import Headding from "../components/Headding.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Layout from "./Layout.astro";
-import { Icon } from "astro-icon/components";
-import Sharer from "../components/Sharer.astro";
 import { getCollection } from "astro:content";
+import Link from "../components/Link.astro";
 
 const allPosts = await getCollection("posts");
 const urlList = [allPosts.map((post) => post.slug)];
 
 type Props = CollectionEntry<"posts">["data"];
-const { title, date, author, description } = Astro.props;
+const { title, date, author, description, url } = Astro.props;
+
+const postUrl = `https://xkale.com/posts/${url}`;
 ---
 
 <Layout title={`Blog | ${title}`} description={description}>
   <Headding text="Blog" />
   <BlobHeader {title} {date} {author} />
-  <SectionContainer
-    class="px-4 py-4 xl:py-[3.25rem]">
-    <div class="flex flex-col justify-center items-center">
+  <SectionContainer class="px-4 py-4 xl:py-[3.25rem]">
+    <div class="flex flex-col lg:flex-row">
       <div
         class="lg:w-[80%] max-w-none prose prose-a:no-underline prose-p:text-xl prose-h1:font-bold prose-h1:text-balance prose-h1:text-xkale prose-h1:text-5xl prose-h2:text-balance prose-h2:text-xkale prose-h2:text-3xl prose-h2:uppercase prose-h3:text-xkale prose-h3:text-2xl prose-h3:uppercase mb-7">
         <slot />
       </div>
+      <aside>
+        <div class="flex gap-4 items-center p-4">
+          <h3>Compartir:</h3>
+          <Link
+            aria-label="redes sociales"
+            class="text-3xl hover:text-xkale"
+            href={`https://www.facebook.com/sharer/sharer.php?u=${postUrl}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            icon={{ name: "facebook", side: "left" }}
+          />
+          <Link
+            aria-label="redes sociales"
+            class="text-3xl hover:text-xkale"
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${postUrl}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            icon={{ name: "linkedin", side: "left" }}
+          />
+        </div>
+      </aside>
     </div>
 
     <div
