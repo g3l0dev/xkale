@@ -19,10 +19,10 @@ const navData = [
     name: "Blog",
     path: "/blog",
   },
-  {
-    name: "Contacto",
-    path: "/contacto",
-  }
+  // {
+  //   name: "Contacto",
+  //   path: "/contacto",
+  // }
 ]
 
 export default navData
