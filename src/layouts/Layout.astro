@@ -1,6 +1,6 @@
 ---
 interface Props {
-  title: string;
+  title?: string;
   description?: string;
   image?: string;
 }
@@ -12,6 +12,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
 import GoogleAnalitycs from "../data/googleAnalitycs.astro";
+import Ga4 from "../components/Ga4.astro";
 ---
 
 <!doctype html>
@@ -44,6 +45,7 @@ import GoogleAnalitycs from "../data/googleAnalitycs.astro";
      
   </head>
   <body>
+    <Ga4 />
     <Nav />
     <main>
       <slot />
