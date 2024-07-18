@@ -18,7 +18,18 @@ import Ga4 from "../components/Ga4.astro";
 <!doctype html>
 <html lang="es">
   <head>
-    <GoogleAnalitycs />
+    <script type="text/partytown">
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NWNF4WH5");
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, inicial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -42,14 +53,22 @@ import Ga4 from "../components/Ga4.astro";
     <meta property="twitter:description" content={description} />
     <meta property="og:image" content={new URL(image, Astro.url)} />
     <!-- open graph linkedin -->
-     
+    <!-- Google Tag Manager -->
+    <!-- End Google Tag Manager -->
   </head>
   <body>
-    <Ga4 />
     <Nav />
     <main>
       <slot />
     </main>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NWNF4WH5"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- Google Tag Manager (noscript) -->
     <Footer />
     <style is:global>
       @font-face {
@@ -81,5 +100,8 @@ import Ga4 from "../components/Ga4.astro";
         margin-block-start: 1rem;
       }
     </style>
+    <!-- Google Tag Manager (noscript) -->
+
+    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>
