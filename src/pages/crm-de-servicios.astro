@@ -1,10 +1,27 @@
 ---
-import CrmLanding from "../components/experiencia-del-cliente/cx-landing/crm-landing.astro";
+import CrmLanding from "../body/experiencia-del-cliente/cx-landing/crm-landing.astro";
+import Analytics from "../components/Analytics.astro";
+import BaseHead from "../components/BaseHead.astro";
+
+import Footer from "../components/Footer.astro";
 import Headding from "../components/Headding.astro";
-import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 ---
 
-<Layout title="CRM de Servicios">
-  <Headding text="Experiencia del cliente" />
-  <CrmLanding />
-</Layout>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <BaseHead title="CRM de Servicios" description="Conoce nuestra experiencia de CRM de Servicios"/>
+</head>
+<body>
+  <Analytics/>
+  <Header/>
+  <main>
+    <Headding text="CRM de Servicios"/>
+    <CrmLanding/>
+  </main>
+  <Footer/>
+</body>
+</html>

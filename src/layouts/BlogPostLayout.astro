@@ -1,54 +1,42 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import Analytics from "../components/Analytics.astro";
+import BaseHead from "../components/BaseHead.astro";
 import BlobHeader from "../components/blob-header.astro";
 import Headding from "../components/Headding.astro";
+import Header from "../components/Header.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-import Layout from "./Layout.astro";
-import { getCollection } from "astro:content";
-import Link from "../components/Link.astro";
 
-const allPosts = await getCollection("posts");
-const urlList = [allPosts.map((post) => post.slug)];
+type Posts = CollectionEntry<"blog">["data"];
+const postsListe = await getCollection("blog");
+const posts = postsListe.sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+)
 
-type Props = CollectionEntry<"posts">["data"];
-const { title, date, author, description, url } = Astro.props;
-
-const postUrl = `https://xkale.com/posts/${url}`;
+const {title, description, date, author} = Astro.props as Posts;
 ---
 
-<Layout title={`Blog | ${title}`} description={description}>
-  <Headding text="Blog" />
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <BaseHead title={`Blog | ${title}`} description={description}/>
+</head>
+<body>
+  <Analytics/>
+  <Header/>
+  <main>
+    <Headding text="Blog" />
   <BlobHeader {title} {date} {author} />
   <SectionContainer class="px-4 py-4 xl:py-[3.25rem]">
-    <div class="flex flex-col lg:flex-row">
+    <div class="flex flex-col">
       <div
         class="lg:w-[80%] max-w-none prose prose-a:no-underline prose-p:text-xl prose-h1:font-bold prose-h1:text-balance prose-h1:text-xkale prose-h1:text-5xl prose-h2:text-balance prose-h2:text-xkale prose-h2:text-3xl prose-h2:uppercase prose-h3:text-xkale prose-h3:text-2xl prose-h3:uppercase mb-7 prose-a:text-xkale  prose-li:text-xl">
         <slot />
       </div>
-      <aside>
-        <div class="flex gap-4 items-center p-4">
-          <h3>Compartir:</h3>
-          <Link
-            aria-label="redes sociales"
-            class="text-3xl hover:text-xkale"
-            href={`https://www.facebook.com/sharer/sharer.php?u=${postUrl}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            icon={{ name: "facebook", side: "left" }}
-          />
-          <Link
-            aria-label="redes sociales"
-            class="text-3xl hover:text-xkale"
-            href={`https://www.linkedin.com/sharing/share-offsite/?url=${postUrl}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            icon={{ name: "linkedin", side: "left" }}
-          />
-        </div>
-      </aside>
-    </div>
-
-    <div
+      <div
       class="flex flex-col justify-center items-center p-9 rounded-xl shadow-lg">
       <h3 class="text-xkale block text-2xl my-4 font-bold isolate">
         Suscribete a nuestro newsletter
@@ -63,4 +51,6 @@ const postUrl = `https://xkale.com/posts/${url}`;
         charset="utf-8"></script>
     </div>
   </SectionContainer>
-</Layout>
+  </main>
+</body>
+</html>

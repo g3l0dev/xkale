@@ -1,16 +1,29 @@
 ---
+import CustomerExperience from "../body/experiencia-del-cliente/customer-experience.astro";
+import CxInfo from "../body/experiencia-del-cliente/cx-info.astro";
+import Analytics from "../components/Analytics.astro";
+import BaseHead from "../components/BaseHead.astro";
 import Form from "../components/contacto/form.astro";
-import CustomerExperience from "../components/experiencia-del-cliente/customer-experience.astro";
-import CxInfo from "../components/experiencia-del-cliente/cx-info.astro";
+import Footer from "../components/Footer.astro";
 import Headding from "../components/Headding.astro";
-import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 ---
 
-<Layout
-  title="Experiencia del cliente"
-  description="En Xkale, nos enfocamos en brindar una experiencia excepcional para tus clientes. Desde el primer contacto hasta el último, nos comprometemos a ofrecer experiencias memorables que superen las expectativas. Con soluciones consultivas, Contact Center Omnicanal, CRM especializado en CX y análisis de la voz del cliente, transformamos cada punto de contacto en una experiencia del cliente excepcional que impulse el crecimiento y el éxito de tu empresa en el mundo digital">
-  <Headding text="Experiencia del cliente" />
-  <CustomerExperience />
-  <CxInfo />
-  <Form />
-</Layout>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <BaseHead/>
+</head>
+<body>
+  <Analytics/>
+  <Header/>
+  <main>
+    <Headding text="Experiencia del cliente"/>
+    <CustomerExperience/>
+    <CxInfo/>
+    <Form/> 
+  </main>
+  <Footer/>
+</body>
+</html>

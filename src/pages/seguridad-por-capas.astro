@@ -1,10 +1,25 @@
 ---
-import Seguridad from "../components/ciberseguridad/cs-landings/seguridad.astro";
+import Seguridad from "../body/ciberseguridad/cs-landings/seguridad.astro";
+import Analytics from "../components/Analytics.astro";
+import BaseHead from "../components/BaseHead.astro";
+
+import Footer from "../components/Footer.astro";
 import Headding from "../components/Headding.astro";
-import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 ---
 
-<Layout title="Seguridad por Capas">
-  <Headding text="Ciberseguridad" />
-  <Seguridad />
-</Layout>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <BaseHead title="Seguridad por capas" description="La seguridad por capas es una técnica de seguridad informática que utiliza capas de protección para proteger los dispositivos y sistemas de la información. Esta técnica se basa en la idea de que los dispositivos y sistemas de la información pueden ser divididos en capas de protección, cada una de ellas proporcionando diferentes niveles de protección contra los ataques cibernéticos."/>
+</head>
+<body>
+  <Analytics/>
+  <Header/>
+  <main>
+    <Headding text="Seguridad por capas" />
+    <Seguridad />
+  </main>
+  <Footer />
+</body>
+</html>

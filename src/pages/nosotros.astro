@@ -1,12 +1,33 @@
 ---
+import UsBanner from "../body/nosotros/us-banner.astro";
+import UsInfoSection from "../body/nosotros/us-info-section.astro";
+import Analytics from "../components/Analytics.astro";
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
 import Headding from "../components/Headding.astro";
-import UsBanner from "../components/nosotros/us-banner.astro";
-import UsInfoSection from "../components/nosotros/us-info-section.astro";
-import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 ---
 
-<Layout title="Nosotros">
+<!-- <Layout title="Nosotros">
   <Headding text="Nosotros" />
   <UsBanner />
   <UsInfoSection />
-</Layout>
+</Layout> -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <BaseHead title="Nosotros" description="Somos Innovadores Conocedores Experimentados Consultores Sobre todo, somos un grupo de profesionales que llevamos la transformación digital como una verdadera pasión al servicio de tu empresa."/>
+</head>
+<body>
+  <Analytics/>
+  <Header/>
+  <main>
+    <Headding text="Nosotros" />
+    <UsBanner />
+    <UsInfoSection />
+  </main>
+  <Footer />
+  
+</body>
+</html>

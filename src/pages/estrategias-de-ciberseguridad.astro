@@ -1,10 +1,26 @@
 ---
-import Estrategia from "../components/ciberseguridad/cs-landings/estrategia.astro";
+import Estrategia from "../body/ciberseguridad/cs-landings/estrategia.astro";
+import Analytics from "../components/Analytics.astro";
+import BaseHead from "../components/BaseHead.astro";
+
+import Footer from "../components/Footer.astro";
 import Headding from "../components/Headding.astro";
-import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 ---
 
-<Layout title="estrategias de Ciberseguridad">
-  <Headding text="Ciberseguridad" />
-  <Estrategia />
-</Layout>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <BaseHead title="Estrategias de Ciberseguridad" description="Conoce nuestras estrategias de Ciberseguridad"/>
+</head>
+<body>
+  <Analytics/>
+  <Header/>
+  <main>
+    <Headding text="estrategias de Ciberseguridad"/>
+    <Estrategia/>
+  </main>
+  <Footer/>
+</body>
+</html>

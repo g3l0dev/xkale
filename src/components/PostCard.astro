@@ -19,7 +19,7 @@ const { url, title, image, description, authorImage, author, tag, iconTag } =
 
 <li class="">
   <a href={url} class="block group">
-    <article class="w-full shadow-2xl">
+    
       <div class="w-full overflow-hidden h-[300px]">
         <img
           class="w-full h-full object-cover group-hover:scale-110 duration-[0.3s]"
@@ -35,7 +35,7 @@ const { url, title, image, description, authorImage, author, tag, iconTag } =
         <h3 class="font-bold text-lg">{title}</h3>
         <p
           class="text-nowrap overflow-hidden text-ellipsis max-w-[600px]"
-          id="texto">
+          id="description">
           {description}
         </p>
       </div>
@@ -49,37 +49,20 @@ const { url, title, image, description, authorImage, author, tag, iconTag } =
         </figure>
         <span class="capitalize font-semibold">{author}</span>
       </div>
-    </article>
+    
   </a>
 </li>
 
-<style>
-  @tailwind components;
-  @layer components {
-    .paragraph {
-      @apply flex-nowrap overflow-hidden text-ellipsis max-w-[300px];
-    }
-  }
-</style>
 
 <script>
-  // No es necesario TypeScript específicamente para limitar el texto en una etiqueta <p>, ya que esto se puede hacer directamente con HTML y CSS. Sin embargo, si necesitas manipular el contenido dinámicamente con TypeScript, puedes hacerlo de esta manera:
-
-  // Obtener la etiqueta <p> por su id
-  const textoElement = document.getElementById("texto");
-
-  // Obtener el texto actual
-  let texto = textoElement.textContent;
-
-  // Verificar la longitud del texto
-  const maxCaracteres = 50; // Cambia este valor al máximo deseado
-  if (texto.length > maxCaracteres) {
-    // Limitar el texto a la cantidad máxima de caracteres
-    texto = texto.substring(0, maxCaracteres);
-    // Agregar puntos suspensivos al final del texto
-    texto += "...";
-  }
-
-  // Actualizar el contenido de la etiqueta <p>
-  textoElement.textContent = texto;
+  document.addEventListener("DOMContentLoaded", () => {
+    const descriptions: NodeListOf<Element> =
+      document.querySelectorAll("#description");
+    descriptions.forEach((description) => {
+      let text: string = description.textContent ?? "";
+      if (text.length > 120) {
+        description.textContent = `${text.slice(0, 120)} ...`;
+      }
+    });
+  });
 </script>

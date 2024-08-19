@@ -1,10 +1,24 @@
 ---
-import Gestion from "../components/ciberseguridad/cs-landings/gestion.astro";
+import Gestion from "../body/ciberseguridad/cs-landings/gestion.astro";
+import Analytics from "../components/Analytics.astro";
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
 import Headding from "../components/Headding.astro";
-import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 ---
 
-<Layout title="Gestion de identidades">
-  <Headding text="Ciberseguridad" />
-  <Gestion />
-</Layout>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <BaseHead title="Gestion de identidades" description="La gestión de identidades es una técnica de seguridad informática que utiliza la identificación y autenticación de usuarios para garantizar que solo los usuarios autorizados pueden acceder a los sistemas y datos. Esta técnica se basa en la idea de que los usuarios deben ser identificados y autenticados antes de acceder a los sistemas y datos."/>
+</head>
+<body>
+  <Analytics/>
+  <Header/>
+  <main>
+    <Headding text="Gestion de identidades" />
+    <Gestion />
+  </main>
+  <Footer />
+</body>
+</html>

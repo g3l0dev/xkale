@@ -1,0 +1,113 @@
+---
+import { Icon } from "astro-icon/components";
+import { PATHS } from "../../utils/PATHS";
+import HeaderLink from "./header-link.astro";
+---
+
+<header>
+  <a href="/" class="logo"><Icon name="logo" class="icon"/></a>
+  <nav class="nav">
+    
+      <div id="menu">
+        {
+          PATHS.map((item)=> <HeaderLink href={item.href}>{item.name}</HeaderLink>)
+        }
+      </div>
+    
+  </nav>
+  <div class="btn-menu">
+    <Icon name="menu-bars" class="btn-icon xl:"/>
+  </div>
+</header>
+
+<style lang="scss">
+  header {
+    display: flex;
+    flex-flow: row;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    @media (1280px <= width) {
+      padding-inline: 2.5rem;
+    }
+    @media (1440px <= width < 1920px) {
+      padding-inline: 7.5rem;
+      padding-block: 1rem;
+    }
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 130px;
+    left: 0;
+    z-index: 10;
+    @media (1440px <= width < 2560px) {
+      position: initial;
+      top: 0;
+      width: auto;
+      z-index: initial;
+    }
+  }
+  .icon {
+    font-size: 100px;
+    color: #67d42f;
+  }
+  .btn-menu {
+    margin-inline-start: 1rem;
+  }
+  .btn-icon {
+    font-size: 42px;
+    cursor: pointer
+  }
+
+  .nav div {
+    display: flex;
+    flex-flow: column;
+    background: #181818;
+    width: 100%;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 0.5s ease;
+    @media (1280px <= width < 2560px) {
+      position: initial;
+      background: none;
+      color: #000;
+      gap: 1em;
+      flex-flow: row;
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+      transition: clip-path 0.1s ease;
+    }
+  }
+
+  .nav div a {
+    padding: 15px;
+    display: block;
+  }
+  .nav div.show {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: all 0.5s ease;
+    @media (1280px <= width < 1920px) {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      transition: clip-path 0.1s ease;
+    }
+  }
+  .active {
+    font-weight: bold;
+    color: #fff;
+    background: #67d42f;
+    @media (1280px <= width < 2560px) {
+      background: none;
+      color: #67d42f;
+    }
+  }
+</style>
+
+<script>
+   const btnMenu = document.querySelector(".btn-menu");
+  const menu = document.querySelector("#menu");
+  btnMenu.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+</script>

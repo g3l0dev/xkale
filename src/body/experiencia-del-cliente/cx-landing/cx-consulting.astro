@@ -1,0 +1,45 @@
+---
+import { Icon } from "astro-icon/components";
+import Btn from "../../../components/Btn.astro";
+import SectionContainer from "../../../components/SectionContainer.astro";
+
+---
+
+<SectionContainer class="xl:pb-[3.25rem]  xl:h-[85vh]">
+  <div class="grid grid-cols-1 gap-10 grid-rows-2 xl:grid-cols-2 xl:grid-rows-1 xl:gap-x-4 h-full">
+    <div>
+      <div class="bg-cx py-5 px-4">
+        <h2
+          class="text-balance text-white block leading-[1.3em] text-xl uppercase font-bold">
+          Consultoría CX
+        </h2>
+      </div>
+      <div
+        class="bg-[url('/image/cx/CONSULTORIA-CX.webp')] bg-center bg-cover bg-no-repeat h-full overflow-hidden group">
+        <a
+          href="#"
+          class="w-6/12 h-full bg-cx/50 flex flex-col justify-center items-center text-white text-xl -translate-x-full group-hover:translate-x-0 duration-500">
+          <Icon name="message" class="size-14" />
+        </a>
+      </div>
+    </div>
+    <div class="flex flex-col justify-center p-4 xl:px-28">
+      <p class="text-pretty text-4xl text-xkale my-4 py-2 block">
+        El protagonista es el <strong class="font-bold"
+          >cliente y tus colaboradores.</strong
+        >
+      </p>
+      <p class="text-pretty text-xl my-4 py-2">
+        En <strong class="font-bold">Xkale</strong> nos enfocamos en sus expectativas,
+        diseñando experiencias personalizadas e innovadoras. Apuntamos a ubicar tu
+        marca a la vanguardia de tu industria guiándote a adoptar las mejores prácticas
+        de CX y EX.
+      </p>
+      <Btn
+        href="/experiencia-del-cliente#form"
+        class="inline self-start shadow-lg"
+        text="Agenda con un consultor"
+      />
+    </div>
+  </div>
+</SectionContainer>

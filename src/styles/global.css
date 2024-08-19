@@ -1,0 +1,32 @@
+ @font-face {
+        font-family: "Public Sans";
+        src: url("/fonts/PublicSans-VariableFont_wght.ttf") format("truetype");
+      }
+      body {
+        font-family: "Public Sans";
+        scroll-behavior: smooth;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 0;
+        position: relative;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-wrap: balance;
+      }
+      p {
+        text-wrap: pretty;
+        margin-block-end: 1rem;
+        margin-block-start: 1rem;
+      }

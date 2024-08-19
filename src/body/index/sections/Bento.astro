@@ -1,0 +1,31 @@
+---
+import SectionContainer from "../../../components/SectionContainer.astro";
+import BentoItem from "../../../components/BentoItem.astro";
+---
+
+<SectionContainer class="grid grid-cols-11 gap-4 h-[100vh] w-full lg:h-[65vh] xl:h-[95vh]">
+  <BentoItem
+    class="lg:col-[1/7] lg:row-[1/11] bg-[url('/image/servicios/CUSTOMER-EXPERIENCE-scaled.webp')] bg-cover bg-no-repeat bg-center">
+    <a
+      class="w-full h-full bg-cx/50 items-center justify-center flex -translate-x-full group-hover:translate-x-0 duration-300 uppercase text-white font-bold text-xl"
+      href="/experiencia-del-cliente">Experiencia del cliente</a
+    >
+  </BentoItem>
+
+  
+  <BentoItem
+    class="lg:col-[7/12] bg-[url('/image/servicios/CIBERSEGURIDAD-scaled.webp')] bg-cover bg-no-repeat bg-center">
+    <a
+      class="w-full h-full bg-cs/50 items-center justify-center flex -translate-x-full group-hover:translate-x-0 duration-300 uppercase text-white font-bold text-xl"
+      href="/ciberseguridad">ciberseguridad</a
+    >
+  </BentoItem>
+
+  <BentoItem
+    class="lg:col-[7/12] bg-[url('/image/servicios/NOSOTROS-scaled.webp')] bg-cover bg-no-repeat bg-center">
+    <a
+      class="w-full h-full bg-xkale/50 items-center justify-center flex -translate-x-full group-hover:translate-x-0 duration-300 uppercase text-white font-bold text-xl"
+      href="/nosotros">nosotros</a
+    >
+  </BentoItem>
+</SectionContainer>
