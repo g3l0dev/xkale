@@ -1,0 +1,66 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <BaseHead/>
+  </head>
+  <body>
+    <Header/>
+    <main>
+      <aside>
+        <label for="search">
+              <span>Escribe el artículo que deseas buscar</span>
+              <input type="search" id="search" name="search" placeholder="Buscar..." required min="2" max="24"/>
+        </label>
+      </aside>
+      <p id="searchReadout"></p>
+      <SectionContainer aria-labelledby="search results">
+
+      </SectionContainer>
+    </main>
+    <Footer />
+  <script type="module">
+    // imports
+    import DOMpurify from 'dompurify';
+
+    // selectores
+    const search = document.querySelector('#search');
+    const searchReadout = document.querySelector('#searchReadout');
+    // funciones
+    function updateDocumentTitle(search) {
+      document.tile = search
+      ? `Resultados de la búsqueda: ${search}`
+      : 'Resultados de la búsqueda';
+    }
+
+    function updateSearchReadout(search) {
+      searchReadout.textContent = search
+        ? `Resultados de la búsqueda: ${search}`
+        : '';
+    }
+    // escuchar evento
+    window.addEventListener('DOMContentLoaded', ()=>{
+      const urlParams = DOMpurify.sanitize(
+        new URLSearchParams(window.location.search).get('q')
+      );
+      updateDocumentTitle(urlParams);
+      updateSearchReadout(urlParams);
+      searchReadout.value = urlParams;
+      search.focus();
+    })
+
+    search.addEventListener('input', () => {
+      const searchTerm = DOMpurify.sanitize(search.value);
+      updateDocumentTitle(searchTerm);
+      updateSearchReadout(searchTerm);
+    })
+  
+  </script>
+  </body>
+</html>

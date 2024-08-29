@@ -10,6 +10,8 @@ import Header from "../../components/Header.astro";
 import Pagination from "../../components/pagination.astro";
 import PostCard from "../../components/PostCard.astro";
 import SectionContainer from "../../components/SectionContainer.astro";
+import SearchWidget from "../../components/SearchWidget.astro";
+
 
 export async function getStaticPaths({ paginate }) {
   const posts = await getCollection("blog");
@@ -34,9 +36,10 @@ const { page } = Astro.props;
   <Analytics />
   <Header />
   <main>
-    <Headding text="Blog" />
+    <Headding text="Blog"  />
     <BlogHelo />
     <SectionContainer class="xl:py-14" aria-label="New Blog Posts">
+      <!-- <SearchWidget /> -->
       <ul
         id="postList"
         class="grid grid-cols-1 grid-rows-auto gap-10 lg:grid-cols-3 my-10">

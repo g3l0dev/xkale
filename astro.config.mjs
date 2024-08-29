@@ -10,6 +10,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  prefetch: true,
   site: "https://www.xkale.com",
   integrations: [icon(), image(), tailwind(), mdx(), react(), partytown({
     config: {
