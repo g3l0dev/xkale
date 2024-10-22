@@ -8,7 +8,7 @@ description: "Ciertamente, la aparición de nuevas tecnologías ha cambiado: Nue
 date: 2022-12-15
 draft: false
 author: "Adrian Molina"
-authorImage: "/image/authors/ADRIAN-MOLINA.webp"
+authorImage: Adrian-Molina
 tag: ["ciberseguridad"]
 iconTag: "/image/iconBlog/icono-blog-cs.webp"
 url: "transformacion-digital-de-una-empresa-metodologia-exitosa"

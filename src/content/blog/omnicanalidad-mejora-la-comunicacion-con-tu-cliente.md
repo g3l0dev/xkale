@@ -9,7 +9,7 @@ description: "El comercio electrónico se ha convertido en una parte esencial de
 date: 2021-12-30
 draft: false
 author: "Geovana Narvaez"
-authorImage: "/image/authors/GEOVANA-NARVAEZ.webp"
+authorImage: Geovana-Narvaez
 tag: ["cx"]
 iconTag: "/image/iconBlog/icono-blog-cx.webp"
 url: "omnicanalidad-mejora-la-comunicacion-con-tu-cliente"

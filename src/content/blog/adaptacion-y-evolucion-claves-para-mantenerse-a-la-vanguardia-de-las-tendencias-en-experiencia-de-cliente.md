@@ -7,7 +7,7 @@ image: {
 description: "En un mundo empresarial en constante cambio, la experiencia del cliente (CX) es el único diferenciador que permite a las empresas ser sostenibles. Es vital que la cultura de nuestra empresa tenga a las personas en el centro, y que tanto la estrategia como la operación se diseñen en torno al cliente."
 date: "2024-06-27T11:00:00.789Z"
 author: "juan diego astudillo"
-authorImage: "/image/authors/juan-d-astudillo.webp"
+authorImage: Juan-Diego-Astudillo
 tag: ["cx"]
 iconTag: "/image/iconBlog/icono-blog-cx.webp"
 url: "adaptacion-y-evolucion-claves-para-mantenerse-a-la-vanguardia-de-las-tendencias-en-experiencia-de-cliente"

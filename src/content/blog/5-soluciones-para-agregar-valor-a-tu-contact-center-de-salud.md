@@ -9,7 +9,7 @@ description: "¿Alguna vez has escuchado una queja sobre un paciente intentando 
 date: "2021-09-30T11:00:00.789Z"
 draft: false
 author: "Francisco Soria"
-authorImage: "/image/authors/FRANCISCO-SORIA.webp"
+authorImage: Francisco-Soria
 tag: ["cx"]
 iconTag: "/image/iconBlog/icono-blog-cx.webp"
 url: "5-soluciones-para-agregar-valor-a-tu-contact-center-de-salud"

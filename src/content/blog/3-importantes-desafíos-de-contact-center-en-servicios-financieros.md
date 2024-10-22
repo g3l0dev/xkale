@@ -8,7 +8,7 @@ image:
 description: "El comercio electrónico se ha convertido en una parte esencial de la vida cotidiana, y optimizar la experiencia del cliente en tu tienda en línea es crucial para el éxito. En un mercado que mueve miles de millones de dólares y con un número creciente de consumidores, la importancia de brindar un excelente Customer Experience no puede ser subestimada. Este artículo se enfoca en ofrecer valiosas estrategias para mejorar la Experiencia del Cliente en tu ecommerce, destacando su importancia y proporcionando consejos prácticos para diferenciarte de la competencia."
 date: "2021-10-05"
 author: "Juan Diego Astudillo"
-authorImage: "/image/authors/juan-d-astudillo.webp"
+authorImage: Juan-Diego-Astudillo
 tag: ["cx"]
 iconTag: "/image/iconBlog/icono-blog-cx.webp"
 url: "3-importantes-desafíos-de-contact-center-en-servicios-financieros"

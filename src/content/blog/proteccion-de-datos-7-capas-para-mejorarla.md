@@ -9,7 +9,7 @@ description: "El comercio electrónico se ha convertido en una parte esencial de
 date: 2021-11-30
 draft: false
 author: "Victor Torres"
-authorImage: "/image/authors/VICTOR-TORRES.webp"
+authorImage: Victor-Torres
 tag: ["ciberseguridad"]
 iconTag: "/image/iconBlog/icono-blog-cs.webp"
 url: "proteccion-de-datos-7-capas-para-mejorarla"

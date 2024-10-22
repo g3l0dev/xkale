@@ -8,7 +8,7 @@ image:
 description: "En el mundo de la salud, uno de los mayores desafíos que enfrentamos es la protección de los datos de los pacientes contra accesos no autorizados."
 date: "2024-07-18T11:00:00.789Z"
 author: "sara silva"
-authorImage: "/image/authors/sara-silva.webp"
+authorImage: Sarita-Silva
 tag: ["CS"]
 iconTag: "/image/iconBlog/icono-blog-cs.webp"
 url: "como-proteger-los-datos-de-los-pacientes-estrategias-de-gestion-de-identidades"

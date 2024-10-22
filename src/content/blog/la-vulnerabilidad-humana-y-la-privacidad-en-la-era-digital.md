@@ -4,11 +4,10 @@ image: {
   src: "/image/posts/La-vulnerabilidad-humana-y-la-privacidad-en-la-era-digital.webp",
   alt: "La vulnerabilidad humana y la privacidad en la era digital"
 }
-description: "El ser humano, en su esencia, es vulnerable. No obstante, ha creado sistemas, agrupaciones y métodos para mitigar esta vulnerabilidad, logrando posicionarse en la cúspide de la supervivencia, la presencia global y el control. Las herramientas, ya sean manuales o tecnológicas, compensan nuestras deficiencias en fuerza, agilidad, composición y creación.
-"
+description: "El ser humano, en su esencia, es vulnerable. No obstante, ha creado sistemas, agrupaciones y métodos para mitigar esta vulnerabilidad, logrando posicionarse en la cúspide de la supervivencia, la presencia global y el control. Las herramientas, ya sean manuales o tecnológicas, compensan nuestras deficiencias en fuerza, agilidad, composición y creación."
 date: "2024-07-11T11:00:00.789Z"
-author: "Luis aucatoma salazar"
-authorImage: "/image/authors/Luis-Aucatoma-Salazar.webp"
+author: "Luis aucatoma"
+authorImage: Luis-Aucatoma
 tag: ["cs"]
 iconTag: "/image/iconBlog/icono-blog-cs.webp"
 url: "la-vulnerabilidad-humana-y-la-privacidad-en-la-era-digital"

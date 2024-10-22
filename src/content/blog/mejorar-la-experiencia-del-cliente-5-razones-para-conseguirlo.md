@@ -8,7 +8,7 @@ description: "Mejorar la Experiencia del Cliente es considerada una tendencia mu
 date: 2022-12-19
 draft: false
 author: "Mariana Moreno"
-authorImage: "/image/authors/mariana-moreno.webp"
+authorImage: Mariana-Moreno
 tag: ["cx"]
 iconTag: "/image/iconBlog/icono-blog-cx.webp"
 url: "mejorar-la-experiencia-del-cliente-5-razones-para-conseguirlo"

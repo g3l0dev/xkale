@@ -18,7 +18,7 @@ const { url, title, image, description, authorImage, author, tag, iconTag } =
 ---
 
 <li class="">
-  <a href={url} class="block group">
+  <a href={url} class="block group ">
     
       <div class="w-full overflow-hidden h-[300px]">
         <img
@@ -33,17 +33,17 @@ const { url, title, image, description, authorImage, author, tag, iconTag } =
       </div>
       <div class="px-4 py-3 h-[150px]">
         <h3 class="font-bold text-lg">{title}</h3>
-        <p
+        <!-- <p
           class="text-nowrap overflow-hidden text-ellipsis max-w-[600px]"
           id="description">
           {description}
-        </p>
+        </p> -->
       </div>
       <div class="flex gap-x-4 px-4 py-3 items-center h-[50px]">
-        <figure class="size-8 rounded-full overflow-hidden">
+        <figure class="size-16 rounded-full overflow-hidden">
           <img
             class="w-full h-full object-cover"
-            src={authorImage}
+            src={`/image/authors/${authorImage}.avif`}
             alt={author}
           />
         </figure>
