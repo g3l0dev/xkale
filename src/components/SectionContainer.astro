@@ -1,10 +1,8 @@
 ---
-interface Prop {
-  class?: string;
-}
+
 ---
 
-<section class={`${Astro.props.class}`}>
+<!-- <section class={`${Astro.props.class}`}>
   <slot />
 </section>
 
@@ -21,4 +19,9 @@ interface Prop {
       padding-inline: 7.5rem;
     }
   }
-</style>
+</style> -->
+
+<section
+  class={`${Astro.props.class} p-4 xl:px-[5rem] xl:py-8 2xl:px-[7.5rem] 2xl:py-16 overflow-hidden`}>
+  <slot />
+</section>
