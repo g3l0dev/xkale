@@ -1,4 +1,4 @@
-b---
+---
 
 import { getCollection } from "astro:content";
 import BlogHelo from "../../components/blog/blog-hero.astro";
@@ -49,7 +49,6 @@ const { page } = Astro.props;
               title={post.data.title}
               url={`/blog/${post.slug}/`}
               image={post.data.image}
-              description={post.data.description}
               authorImage={post.data.authorImage}
               author={post.data.author}
               tag={post.data.tag}
