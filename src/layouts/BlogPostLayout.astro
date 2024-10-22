@@ -12,45 +12,44 @@ type Posts = CollectionEntry<"blog">["data"];
 const postsListe = await getCollection("blog");
 const posts = postsListe.sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-)
+);
 
-const {title, description, date, author} = Astro.props as Posts;
+const { title, description, date, author } = Astro.props as Posts;
 ---
 
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <BaseHead title={`Blog | ${title}`} description={description}/>
-</head>
-<body>
-  <Analytics/>
-  <Header/>
-  <main>
-    <Headding text="Blog" />
-  <BlobHeader {title} {date} {author} />
-  <SectionContainer class="px-4 py-4 xl:py-[3.25rem]">
-    <div class="flex flex-col">
-      <div
-        class="lg:w-[80%] max-w-none prose prose-a:no-underline prose-p:text-xl prose-h1:font-bold prose-h1:text-balance prose-h1:text-xkale prose-h1:text-5xl prose-h2:text-balance prose-h2:text-xkale prose-h2:text-3xl prose-h2:uppercase prose-h3:text-xkale prose-h3:text-2xl prose-h3:uppercase mb-7 prose-a:text-xkale  prose-li:text-xl">
-        <slot />
-      </div>
-      <div
-      class="flex flex-col justify-center items-center p-9 rounded-xl shadow-lg">
-      <h3 class="text-xkale block text-2xl my-4 font-bold isolate">
-        Suscribete a nuestro newsletter
-      </h3>
-      <p>
-        ¡Quieres más de esto! Suscríbete a nuestro newsletter y entérate de
-        tendencias en Experiencia del cliente y Ciberseguridad directamente en
-        tu bandeja de entrada.
-      </p>
-      <div class="_form_3"></div><script
-        src="https://xkale.activehosted.com/f/embed.php?id=3"
-        charset="utf-8"></script>
-    </div>
-  </SectionContainer>
-  </main>
-</body>
+  <head>
+    <BaseHead title={`Blog | ${title}`} description={description} />
+  </head>
+  <body>
+    <Analytics />
+    <Header />
+    <main>
+      <Headding text="Blog" />
+      <BlobHeader {title} {date} {author} />
+      <SectionContainer class="px-4 py-4 xl:py-[3.25rem]">
+        <div class="flex flex-col">
+          <div
+            class="lg:w-[80%] max-w-none prose prose-a:no-underline prose-p:text-xl prose-h1:font-bold prose-h1:text-balance prose-h1:text-xkale prose-h1:text-5xl prose-h2:text-balance prose-h2:text-xkale prose-h2:text-3xl prose-h2:uppercase prose-h3:text-xkale prose-h3:text-2xl prose-h3:uppercase mb-7 prose-a:text-xkale prose-li:text-xl">
+            <slot />
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-9 rounded-xl shadow-lg">
+            <h3 class="text-xkale block text-2xl my-4 font-bold isolate">
+              Suscribete a nuestro newsletter
+            </h3>
+            <p>
+              ¡Quieres más de esto! Suscríbete a nuestro newsletter y entérate
+              de tendencias en Experiencia del cliente y Ciberseguridad
+              directamente en tu bandeja de entrada.
+            </p>
+            <div class="_form_3"></div><script
+              src="https://xkale.activehosted.com/f/embed.php?id=3"
+              charset="utf-8"></script>
+          </div>
+        </div>
+      </SectionContainer>
+    </main>
+  </body>
 </html>
