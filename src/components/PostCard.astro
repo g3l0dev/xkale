@@ -2,58 +2,73 @@
 interface Props {
   url: string;
   title: string;
-  image: {
-    src: string;
-    alt: string;
-  };
+  image: string;
   authorImage: string;
   author: string;
   tag: string;
   iconTag: string;
 }
 
-const { url, title, image, authorImage, author, tag, iconTag } =
-  Astro.props;
+const { url, title, image, authorImage, author, tag, iconTag } = Astro.props;
 ---
 
-<li class="">
-  <a href={url} class="block group ">
-    
-      <div class="w-full overflow-hidden h-[300px]">
-        <img
-          class="w-full h-full object-cover group-hover:scale-110 duration-[0.3s]"
-          src={image.src}
-          alt={image.alt}
-        />
-      </div>
-      <div class="flex justify-between px-4 py-3 h-[50px]">
-        <img src={iconTag} alt="" />
-        <span class="uppercase">{tag}</span>
-      </div>
-      <div class="px-4 py-3 h-[150px]">
-        <h3 class="font-bold text-lg">{title}</h3>
-        <!-- <p
+<!-- <li class="">
+  <a href={url} class="block group">
+    <div class="w-full overflow-hidden h-[300px]">
+      <img
+        class="w-full h-full object-cover group-hover:scale-110 duration-[0.3s]"
+        src={`/image/posts/${image}.avif`}
+        alt={image}
+      />
+    </div>
+    <div class="flex justify-between px-4 py-3 h-[50px]">
+      <img src={iconTag} alt="" />
+      <span class="uppercase">{tag}</span>
+    </div>
+    <div class="px-4 py-3 h-[150px]">
+      <h3 class="font-bold text-lg">{title}</h3>
+      <p
           class="text-nowrap overflow-hidden text-ellipsis max-w-[600px]"
           id="description">
           {description}
-        </p> -->
+        </p>
+    </div>
+    <div class="flex gap-x-4 px-4 py-3 items-center h-[50px]">
+      <figure class="size-16 rounded-full overflow-hidden">
+        <img
+          class="w-full h-full object-cover"
+          src={`/image/authors/${authorImage}.avif`}
+          alt={author}
+        />
+      </figure>
+      <span class="capitalize font-semibold">{author}</span>
+    </div>
+  </a>
+</li> -->
+<li>
+  <a href={url}>
+    <article class="grid grid-rows-[auto_auto_1fr_auto] min-h-80 gap-y-4 group">
+      <div class="w-full h-80 overflow-hidden">
+        <img
+          src={`/image/posts/${image}.avif`}
+          alt={title}
+          class="w-full h-full object-cover group-hover:scale-110 duration-[0.3s]"
+        />
       </div>
-      <div class="flex gap-x-4 px-4 py-3 items-center h-[50px]">
-        <figure class="size-16 rounded-full overflow-hidden">
-          <img
-            class="w-full h-full object-cover"
-            src={`/image/authors/${authorImage}.avif`}
-            alt={author}
-          />
-        </figure>
-        <span class="capitalize font-semibold">{author}</span>
+      <div class="flex items-center justify-between">
+        <img src={`/image/iconBlog/${iconTag}.webp`} alt={tag} />
+        <p class="text-sm uppercase">{tag}</p>
       </div>
-    
+      <h3 class="text-[1.17rem] leading-[1.4] font-bold text-balance ">{title}</h3>
+      <div class="flex gap-x-4 items-center">
+        <div class="overflow-hidden size-12 rounded-full"><img src={`/image/authors/${authorImage}.avif`} alt={author} class="w-full h-full object-cover" /></div>
+        <h4 class="text-sm font-block capitalize">{author}</h4>
+      </div>
+    </article>
   </a>
 </li>
 
-
-<script>
+<!-- <script>
   document.addEventListener("DOMContentLoaded", () => {
     const descriptions: NodeListOf<Element> =
       document.querySelectorAll("#description");
@@ -64,4 +79,4 @@ const { url, title, image, authorImage, author, tag, iconTag } =
       }
     });
   });
-</script>
+</script> -->

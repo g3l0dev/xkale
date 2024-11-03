@@ -1,17 +1,13 @@
 ---
 title: "5 Soluciones para agregar valor a tu Contact Center de salud"
-image:
-  {
-    src: "/image/posts/5-Soluciones-para-agregar-valor-a-tu-Contact-Center-de-salud-1024x576.webp",
-    alt: "cx",
-  }
+image: 5-Soluciones-para-agregar-valor-a-tu-Contact-Center-de-salud
 description: "¿Alguna vez has escuchado una queja sobre un paciente intentando comunicarse efectivamente con su servicio de salud? Ya sea una EPS (Entidad Promotora de Salud), alguna clínica o un servicio de salud en específico, no has sido el único. Según el Banco Interamericano de Desarrollo en América Latina"
 date: "2021-09-30T11:00:00.789Z"
 draft: false
 author: "Francisco Soria"
 authorImage: Francisco-Soria
 tag: ["cx"]
-iconTag: "/image/iconBlog/icono-blog-cx.webp"
+iconTag: icono-blog-cx
 url: "5-soluciones-para-agregar-valor-a-tu-contact-center-de-salud"
 ---
 

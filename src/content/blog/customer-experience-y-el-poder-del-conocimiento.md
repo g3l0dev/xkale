@@ -1,16 +1,12 @@
 ---
 title: "Customer experience y el poder del conocimiento"
-image:
-  {
-    src: "/image/posts/Customer-experience-y-el-poder-del-conocimiento-1024x576.webp",
-    alt: "customer experience y el poder del conocimiento",
-  }
+image: Customer-experience-y-el-poder-del-conocimiento
 description: "El comercio electrónico se ha convertido en una parte esencial de la vida cotidiana, y optimizar la experiencia del cliente en tu tienda en línea es crucial para el éxito. En un mercado que mueve miles de millones de dólares y con un número creciente de consumidores, la importancia de brindar un excelente Customer Experience no puede ser subestimada. Este artículo se enfoca en ofrecer valiosas estrategias para mejorar la Experiencia del Cliente en tu ecommerce, destacando su importancia y proporcionando consejos prácticos para diferenciarte de la competencia."
 date: "2021-11-29T11:00:00.789Z"
 author: "Alejandro Bonilla"
 authorImage: Alejandro-Bonilla
 tag: ["cx"]
-iconTag: "/image/iconBlog/icono-blog-cx.webp"
+iconTag: icono-blog-cx
 url: "customer-experience-y-el-poder-del-conocimiento"
 ---
 

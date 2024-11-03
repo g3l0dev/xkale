@@ -1,21 +1,15 @@
 ---
 title: "La vulnerabilidad humana y la privacidad en la era digital"
-image: {
-  src: "/image/posts/La-vulnerabilidad-humana-y-la-privacidad-en-la-era-digital.webp",
-  alt: "La vulnerabilidad humana y la privacidad en la era digital"
-}
+image: trasformacion-digital-de-una-empresa
 description: "El ser humano, en su esencia, es vulnerable. No obstante, ha creado sistemas, agrupaciones y métodos para mitigar esta vulnerabilidad, logrando posicionarse en la cúspide de la supervivencia, la presencia global y el control. Las herramientas, ya sean manuales o tecnológicas, compensan nuestras deficiencias en fuerza, agilidad, composición y creación."
 date: "2024-07-11T11:00:00.789Z"
 author: "Luis aucatoma"
 authorImage: Luis-Aucatoma
 tag: ["cs"]
-iconTag: "/image/iconBlog/icono-blog-cs.webp"
-url: "la-vulnerabilidad-humana-y-la-privacidad-en-la-era-digital"
+iconTag: icono-blog-cs
 ---
 
 El ser humano, en su esencia, es vulnerable. No obstante, ha creado sistemas, agrupaciones y métodos para mitigar esta vulnerabilidad, logrando posicionarse en la cúspide de la supervivencia, la presencia global y el control. Las herramientas, ya sean manuales o tecnológicas, compensan nuestras deficiencias en fuerza, agilidad, composición y creación.
-
-![La vulnerabilidad humana y la privacidad en la era digital](/image/posts/La-vulnerabilidad-humana-y-la-privacidad-en-la-era-digital.webp)
 
 ### Análisis y prevención de riesgos
 Los análisis que realizamos nos permiten anticipar situaciones de riesgo, utilizando patrones repetitivos de sucesos naturales para formular razonamientos beneficiosos para la humanidad. Sin embargo, no solo enfrentamos deficiencias externas, sino también internas, producto de nuestras complejas relaciones sociales que pueden generar inseguridades.

@@ -1,16 +1,12 @@
 ---
 title: "4 estrategias para mejorar tu relación con el cliente"
-image:
-  {
-    src: "/image/posts/4-estrategias-para-mejorar-tu-relacion-con-el-cliente-1024x576.webp",
-    alt: "4 estrategias para mejorar tu relación con el cliente",
-  }
+image: 4-estrategias-para-mejorar-tu-relacion-con-el-cliente
 description: "Actualmente, la relación con el cliente es uno de los principales retos de cualquier empresa para mantener una buena reputación. No solamente es primordial conseguir clientes, sino tener la capacidad de cuidar y fidelizar los clientes que ya se tienen. "
 date: "2021-12-28"
 author: "Tito Casamen"
 authorImage: "/image/authors/tito-casamen.webp"
 tag: ["cx"]
-iconTag: "/image/iconBlog/icono-blog-cx.webp"
+iconTag: icono-blog-cx
 url: "4-estrategias-para-mejorar-tu-relacion-con-el-cliente"
 ---
 Actualmente, la relación con el cliente es uno de los principales retos de cualquier empresa para mantener una buena reputación. No solamente es primordial conseguir clientes, sino tener la capacidad de cuidar y fidelizar los clientes que ya se tienen. Muchas veces se descuidan a estos clientes recurrentes por querer buscar nuevos clientes, esto podría generar desconfianza tanto para los clientes que ya están, cómo para los que podrían llegar nuevos.

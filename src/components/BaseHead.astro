@@ -1,46 +1,62 @@
 ---
-import '../styles/global.css'
+import type { CollectionEntry } from "astro:content";
+import "../styles/global.css";
+import { getCollection } from "astro:content";
 interface Props {
   title?: string;
   description?: string;
   image?: string;
 }
 
+type Posts = CollectionEntry<"blog">["data"];
+const postsListe = await getCollection("blog");
+const posts = postsListe.sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+// const { title, description, date, author, image } = Astro.props as Posts;
+
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
+const { title, description, image } = Astro.props;
 ---
+
 <script type="text/partytown">
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-NWNF4WH5");
-    </script>
-    <meta name="facebook-domain-verification" content="epovoqnmoyy9cpy1hrdfylzc46tx0q" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, inicial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
-    <!-- conditional url -->
-    <link rel="conditional" href={canonicalURL} />
-    <!-- primary meta tags -->
-    <title>{title}</title>
-    <meta name="title" content={title} />
-    <meta name="description" content={description} />
-    <!-- open graph/ facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={new URL(image, Astro.url)} />
-    <!-- twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={Astro.url} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    <meta property="og:image" content={new URL(image, Astro.url)} />
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NWNF4WH5");
+</script>
+<meta
+  name="facebook-domain-verification"
+  content="epovoqnmoyy9cpy1hrdfylzc46tx0q"
+/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, inicial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="sitemap" href="/sitemap-index.xml" />
+<!-- conditional url -->
+<link rel="conditional" href={canonicalURL} />
+<!-- primary meta tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<!-- open graph/ facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<!-- <meta property="og:image" content={new URL(image, Astro.url)} /> -->
+<meta property="og:image" content={`/image/posts/${image}.avif`} />
+<!-- twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<!-- <meta property="og:image" content={new URL(image, Astro.url)} /> -->
+<meta property="og:image" content={`/image/posts/${image}.avif`} />

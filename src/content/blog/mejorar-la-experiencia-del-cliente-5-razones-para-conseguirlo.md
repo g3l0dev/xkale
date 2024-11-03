@@ -1,21 +1,14 @@
 ---
 title: "Mejorar La Experiencia del Cliente: 5 razones para conseguirlo"
-image: {
-src: "/image/posts/Mejorar-La-Experiencia-del-Cliente_-5-razones-para-conseguirlo-1024x576.webp",
-alt: "Mejora la experiencia del cliente"
-}
+image: mejora-la-experiencia-del-cliente
 description: "Mejorar la Experiencia del Cliente es considerada una tendencia muy valorada en el mundo… Debido a que, todas las grandes marcas reconstruyeron sus procesos priorizando este aspecto dentro de estos, puesto que, se ha demostrado que la lealtad y recurrencia de cada cliente influye positivamente en la mejora de resultados y evolución de las empresas."
-date: 2022-12-19
-draft: false
+date: 2022-12-18T11:00:00.789Z
 author: "Mariana Moreno"
 authorImage: Mariana-Moreno
 tag: ["cx"]
-iconTag: "/image/iconBlog/icono-blog-cx.webp"
-url: "mejorar-la-experiencia-del-cliente-5-razones-para-conseguirlo"
+iconTag: icono-blog-cx
 ---
 Mejorar la **Experiencia del Cliente** es considerada una tendencia muy valorada en el mundo… Debido a que, todas las grandes marcas reconstruyeron sus procesos priorizando este aspecto dentro de estos, puesto que, se ha demostrado que la lealtad y recurrencia de cada cliente influye positivamente en la mejora de resultados y evolución de las empresas.
-
-![Mejora la experiencia del cliente](/image/posts/Mejorar-La-Experiencia-del-Cliente_-5-razones-para-conseguirlo-1024x576.webp)
 
 Es importante tener en cuenta que para mejorar la Experiencia del Cliente y evolucionar una empresa se debe principalmente entender de mejor manera el comportamiento de los usuarios y con base a esto, diseñar procesos que satisfagan necesidades y que los estándares de atención al cliente sean eficientes.
 

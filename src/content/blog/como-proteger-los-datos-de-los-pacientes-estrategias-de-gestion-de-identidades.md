@@ -1,16 +1,12 @@
 ---
 title: "¿Cómo proteger los datos de los pacientes?: Estrategias de gestión de identidades"
-image:
-  {
-  src: "/image/posts/como-proteger-los-datos-de-los-pacientes-estrategias-de-gestion-de-identidades.webp",
-  alt: "como-proteger-los-datos-de-los-pacientes-estrategias-de-gestion-de-identidades"
-  }
+image: hola
 description: "En el mundo de la salud, uno de los mayores desafíos que enfrentamos es la protección de los datos de los pacientes contra accesos no autorizados."
 date: "2024-07-18T11:00:00.789Z"
 author: "sara silva"
 authorImage: Sarita-Silva
 tag: ["CS"]
-iconTag: "/image/iconBlog/icono-blog-cs.webp"
+iconTag: icono-blog-cs
 url: "como-proteger-los-datos-de-los-pacientes-estrategias-de-gestion-de-identidades"
 ---
 

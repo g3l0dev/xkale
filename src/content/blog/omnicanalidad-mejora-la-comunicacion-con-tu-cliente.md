@@ -1,17 +1,13 @@
 ---
 title: "Omnicanalidad: mejora la comunicación con tu cliente"
-image:
-  {
-    src: "../../../public/image/posts/Omnicanalidad_-mejora-la-comunicacion-con-tu-cliente-1024x576.webp",
-    alt: "omnicanalidad: mejora la comuniciacón con tu cliente",
-  }
+image: Omnicanalidad_-mejora-la-comunicacion-con-tu-cliente
 description: "El comercio electrónico se ha convertido en una parte esencial de la vida cotidiana, y optimizar la experiencia del cliente en tu tienda en línea es crucial para el éxito. En un mercado que mueve miles de millones de dólares y con un número creciente de consumidores, la importancia de brindar un excelente Customer Experience no puede ser subestimada. Este artículo se enfoca en ofrecer valiosas estrategias para mejorar la Experiencia del Cliente en tu ecommerce, destacando su importancia y proporcionando consejos prácticos para diferenciarte de la competencia."
 date: 2021-12-30
 draft: false
 author: "Geovana Narvaez"
 authorImage: Geovana-Narvaez
 tag: ["cx"]
-iconTag: "/image/iconBlog/icono-blog-cx.webp"
+iconTag: icono-blog-cx
 url: "omnicanalidad-mejora-la-comunicacion-con-tu-cliente"
 ---
 Que tu empresa tenga presente la omnicanalidad es ideal para poder tener mejor comunicación y cercanía con los clientes que recurren a tus productos o servicios. 

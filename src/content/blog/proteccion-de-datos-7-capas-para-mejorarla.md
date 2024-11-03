@@ -1,17 +1,13 @@
 ---
 title: "Protección de datos: 7 capas para mejorarla"
-image:
-  {
-    src: "/image/posts/Proteccion-de-datos_-7-capas-para-mejorarla-1024x576.webp",
-    alt: "Protección de datos: 7 capas para mejorarla",
-  }
+image: Proteccion-de-datos_-7-capas-para-mejorarla
 description: "El comercio electrónico se ha convertido en una parte esencial de la vida cotidiana, y optimizar la experiencia del cliente en tu tienda en línea es crucial para el éxito. En un mercado que mueve miles de millones de dólares y con un número creciente de consumidores, la importancia de brindar un excelente Customer Experience no puede ser subestimada. Este artículo se enfoca en ofrecer valiosas estrategias para mejorar la Experiencia del Cliente en tu ecommerce, destacando su importancia y proporcionando consejos prácticos para diferenciarte de la competencia."
 date: 2021-11-30
 draft: false
 author: "Victor Torres"
 authorImage: Victor-Torres
-tag: ["ciberseguridad"]
-iconTag: "/image/iconBlog/icono-blog-cs.webp"
+tag: ["cs"]
+iconTag: icono-blog-cs
 url: "proteccion-de-datos-7-capas-para-mejorarla"
 ---
 Los datos se han convertido en algo crucial para el éxito y la supervivencia de casi cualquier empresa en el mundo actual. Cuando se roban los datos, incluso las empresas más exitosas pueden verse abocadas a la quiebra. La protección de datos en los sistemas digitales es difícil porque hay una amplia gama de amenazas conocidas y desconocidas que pueden conducir a una violación de los datos. Las empresas que quieren tener la protección de datos asegurada suelen utilizarlo por capas.

@@ -1,22 +1,15 @@
 ---
 title: "Transformación Digital de una Empresa: Metodología Exitosa"
-image: {
-src: "/image/posts/Transformacion-Digital-de-una-Empresa_-Metodologia-Exitosa-1024x576.webp",
-alt: "Transfomación digital"
-}
+image: transformacion-digital-de-una-empresa
 description: "Ciertamente, la aparición de nuevas tecnologías ha cambiado: Nuestra forma de trabajar, nuestra manera de realizar compras e incluso la forma en la que nos relacionamos. La necesidad en sumarse al proceso de Transformación Digital de una Empresa para poder evolucionar y no continuar con procesos de trabajo obsoletos y poco rentables. Si las empresas aprenden a utilizar correctamente estas tecnologías, obtendrán un gran potencial para generar nuevas oportunidades de negocio y abrirse a nuevos mercados."
-date: 2022-12-15
-draft: false
+date: 2022-12-14T11:00:00.789Z
 author: "Adrian Molina"
 authorImage: Adrian-Molina
-tag: ["ciberseguridad"]
-iconTag: "/image/iconBlog/icono-blog-cs.webp"
-url: "transformacion-digital-de-una-empresa-metodologia-exitosa"
+tag: ["cs"]
+iconTag: icono-blog-cs
 ---
 
 Ciertamente, la aparición de nuevas tecnologías ha cambiado: Nuestra forma de trabajar, nuestra manera de realizar compras e incluso la forma en la que nos relacionamos. La necesidad en sumarse al proceso de **Transformación Digital de una Empresa** para poder evolucionar y no continuar con procesos de trabajo obsoletos y poco rentables. Si las empresas aprenden a utilizar correctamente estas tecnologías, obtendrán un gran potencial para generar nuevas oportunidades de negocio y abrirse a nuevos mercados.
-
-![Transfomación digital](/image/posts/Transformacion-Digital-de-una-Empresa_-Metodologia-Exitosa-1024x576.webp)
 
 Cabe destacar que, la Transformación Digital de una Empresa permite transformar la metodología de operación de una empresa, a través de la integración de la tecnología digital en todas las áreas de una empresa, y tiene como objetivo principal optimizar procesos que mejoren la competitividad para ofrecer un valor agregado a sus clientes.
 
