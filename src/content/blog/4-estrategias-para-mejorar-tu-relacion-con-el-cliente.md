@@ -4,7 +4,7 @@ image: 4-estrategias-para-mejorar-tu-relacion-con-el-cliente
 description: "Actualmente, la relación con el cliente es uno de los principales retos de cualquier empresa para mantener una buena reputación. No solamente es primordial conseguir clientes, sino tener la capacidad de cuidar y fidelizar los clientes que ya se tienen. "
 date: "2021-12-28"
 author: "Tito Casamen"
-authorImage: "/image/authors/tito-casamen.webp"
+authorImage: tito-casamen
 tag: ["cx"]
 iconTag: icono-blog-cx
 url: "4-estrategias-para-mejorar-tu-relacion-con-el-cliente"
