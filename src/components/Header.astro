@@ -5,18 +5,18 @@ import HeaderLink from "./header-link.astro";
 ---
 
 <header>
-  <a href="/" class="logo"><Icon name="logo" class="icon"/></a>
+  <a href="/" class="logo"><Icon name="logo" class="icon" /></a>
   <nav class="nav">
-    
-      <div id="menu">
-        {
-          PATHS.map((item)=> <HeaderLink href={item.href}>{item.name}</HeaderLink>)
-        }
-      </div>
-    
+    <div id="menu">
+      {
+        PATHS.map((item) => (
+          <HeaderLink href={item.href}>{item.name}</HeaderLink>
+        ))
+      }
+    </div>
   </nav>
   <div class="btn-menu">
-    <Icon name="menu-bars" class="btn-icon xl:"/>
+    <Icon name="menu-bars" class="btn-icon xl:" />
   </div>
 </header>
 
@@ -59,7 +59,7 @@ import HeaderLink from "./header-link.astro";
   }
   .btn-icon {
     font-size: 42px;
-    cursor: pointer
+    cursor: pointer;
   }
 
   .nav div {
@@ -105,7 +105,7 @@ import HeaderLink from "./header-link.astro";
 </style>
 
 <script>
-   const btnMenu = document.querySelector(".btn-menu");
+  const btnMenu = document.querySelector(".btn-menu");
   const menu = document.querySelector("#menu");
   btnMenu.addEventListener("click", () => {
     menu.classList.toggle("show");
