@@ -7,6 +7,7 @@ import BlobHeader from "../components/blob-header.astro";
 import Headding from "../components/Headding.astro";
 import Header from "../components/Header.astro";
 import SectionContainer from "../components/SectionContainer.astro";
+import Footer from "../components/Footer.astro";
 
 type Posts = CollectionEntry<"blog">["data"];
 const postsListe = await getCollection("blog");
@@ -31,8 +32,8 @@ const { title, description, date, author, image } = Astro.props as Posts;
       <Headding text="Blog" />
       <BlobHeader {title} {date} {author} />
       <SectionContainer class="px-4 py-4 xl:py-[3.25rem]">
-        <div class="flex flex-col">
-          <img src={`/image/posts/${image}.avif`} alt={image} loading="lazy" class="xl:w-[1080px] w-full h-56 mb-5 xl:h-[700px]"/>
+        <div class="flex flex-col justify-center items-center">
+          <img src={`/image/posts/${image}.avif`} alt={image} loading="lazy" class="xl:w-[1080px] w-full h-56 mb-5 lg:w-[700px] lg:h-96 object-contain"/>
           <div
             class="lg:w-[80%] max-w-none prose prose-a:no-underline prose-p:text-xl prose-h1:font-bold prose-h1:text-balance prose-h1:text-xkale prose-h1:text-5xl prose-h2:text-balance prose-h2:text-xkale prose-h2:text-3xl prose-h2:uppercase prose-h3:text-xkale prose-h3:text-2xl prose-h3:uppercase mb-7 prose-a:text-xkale prose-li:text-xl">
             <slot />
@@ -54,5 +55,6 @@ const { title, description, date, author, image } = Astro.props as Posts;
         </div>
       </SectionContainer>
     </main>
+    <Footer/>
   </body>
 </html>
