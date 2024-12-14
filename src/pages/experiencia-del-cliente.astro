@@ -1,29 +1,17 @@
 ---
-import CustomerExperience from "../body/experiencia-del-cliente/customer-experience.astro";
-import CxInfo from "../body/experiencia-del-cliente/cx-info.astro";
-import Analytics from "../components/Analytics.astro";
-import BaseHead from "../components/BaseHead.astro";
-import Form from "../components/contacto/form.astro";
-import Footer from "../components/Footer.astro";
-import Headding from "../components/Headding.astro";
-import Header from "../components/Header.astro";
+import CustomerExperience from "@componnents/body/experiencia-del-cliente/customer-experience.astro";
+import CxInfo from "@componnents/body/experiencia-del-cliente/cx-info.astro";
+import Form from "@componnents/contacto/form.astro";
+import Headding from "@componnents/Headding.astro";
+import Base from "@layouts/Base.astro";
 ---
 
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <BaseHead title="Experiencia del cliente" description="Conoce nuestra experiencia del cliente y nuestro proceso de selección de clientes"/>
-</head>
-<body>
-  <Analytics/>
-  <Header/>
-  <main>
-    <Headding text="Experiencia del cliente"/>
-    <CustomerExperience/>
-    <CxInfo/>
-    <Form/> 
-  </main>
-  <Footer/>
-</body>
-</html>
+<Base
+  title="Experiencia del cliente"
+  description="Conoce nuestra experiencia del cliente y nuestro proceso de selección de clientes"
+>
+  <Headding text="Experiencia del cliente" />
+  <CustomerExperience />
+  <CxInfo />
+  <Form />
+</Base>

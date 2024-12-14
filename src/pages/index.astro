@@ -1,15 +1,11 @@
 ---
-import Bento from "../body/index/sections/Bento.astro";
-import BlogSection from "../body/index/sections/BlogSection.astro";
-import SectionDescription from "../body/index/sections/SectionDescription.astro";
-import Analytics from "../components/Analytics.astro";
-import BaseHead from "../components/BaseHead.astro";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
-
+import Bento from "@componnents/body/index/sections/Bento.astro";
+import BlogSection from "@componnents/body/index/sections/BlogSection.astro";
+import SectionDescription from "@componnents/body/index/sections/SectionDescription.astro";
+import Base from "@layouts/Base.astro";
 ---
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="es">
   <head>
     <BaseHead title="Xkale"
@@ -19,10 +15,15 @@ import Header from "../components/Header.astro";
     <Analytics />
     <Header/> 
     <main>
-      <Bento />
-      <SectionDescription />
-      <BlogSection />
     </main>
     <Footer />
   </body>
-</html>
+  </html> -->
+<Base
+  title="Xkale"
+  description="En Xkale nos enfocamos en construir experiencias memorables para tus clientes y empleados, y reducimos al mínimo los riesgos digitales de tu empresa para maximizar tu resiliencia. ¡Confía en nosotros para transformar la experiencia de tu empresa y maximizar su resiliencia en el mundo digital"
+>
+  <Bento />
+  <SectionDescription />
+  <BlogSection />
+</Base>

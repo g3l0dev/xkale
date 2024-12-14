@@ -1,25 +1,13 @@
 ---
-import ContactCenter from "../body/experiencia-del-cliente/cx-landing/contact-center.astro";
-import Analytics from "../components/Analytics.astro";
-import BaseHead from "../components/BaseHead.astro";
-import Footer from "../components/Footer.astro";
-import Headding from "../components/Headding.astro";
-import Header from "../components/Header.astro";
+import ContactCenter from "@componnents/body/experiencia-del-cliente/cx-landing/contact-center.astro";
+import Headding from "@componnents/Headding.astro";
+import Base from "@layouts/Base.astro";
 ---
 
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <BaseHead title="Contact center omnicanal" description="Conoce nuestra experiencia de Contact Center Omnicanal"/>
-</head>
-<body>
-  <Analytics/>
-  <Header/>
-  <main>
-    <Headding text="Contact center omnicanal"/>
-    <ContactCenter/>
-  </main>
-  <Footer/>
-</body>
-</html>
+<Base
+  title="Contact center omnicanal"
+  description="Conoce nuestra experiencia de Contact Center Omnicanal"
+>
+  <Headding text="Contact center omnicanal" />
+  <ContactCenter />
+</Base>

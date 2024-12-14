@@ -1,73 +1,84 @@
 ---
 import { getCollection } from "astro:content";
-import Analytics from "../../components/Analytics.astro";
-import BaseHead from "../../components/BaseHead.astro";
-import BlogHelo from "../../components/blog/blog-hero.astro";
-import Footer from "../../components/Footer.astro";
-import Headding from "../../components/Headding.astro";
-import Header from "../../components/Header.astro";
-import Pagination from "../../components/pagination.astro";
-import PostCard from "../../components/PostCard.astro";
-import SectionContainer from "../../components/SectionContainer.astro";
+
+import Base from "@layouts/Base.astro";
+import Headding from "@componnents/Headding.astro";
+import Pagination from "@componnents/pagination.astro";
+import PostCard from "@componnents/PostCard.astro";
+import SectionContainer from "@componnents/SectionContainer.astro";
+import Link from "@componnents/Link.astro";
 
 export async function getStaticPaths({ paginate }) {
   const posts = await getCollection("blog");
   const formattedPosts = posts.sort(
-    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
   );
   return paginate(formattedPosts, { pageSize: 9 });
 }
 
 interface Props {
   page: any;
+  slug: string;
 }
 const { page } = Astro.props;
 ---
 
-<!doctype html>
-<html lang="es">
-  <head>
-    <BaseHead
-      title="Blog"
-      description="Blog de Innovadores Conocedores Experimentados Consultores Sobre todo, somos un grupo de profesionales que llevamos la transformación digital como una verdadera pasión al servicio de tu empresa."
+<Base
+  title="Blog"
+  description="Blog de Innovadores Conocedores Experimentados Consultores Sobre todo, somos un grupo de profesionales que llevamos la transformación digital como una verdadera pasión al servicio de tu empresa."
+>
+  <Headding text="Blog" />
+  <!-- <BlogHelo /> -->
+  <SectionContainer
+    class="xl:py-14 relative min-h-[80vh] flex flex-col justify-center items-center"
+  >
+    <div
+      class="absolute top-0 left-0 w-full h-full bg-blog-cover bg-cover bg-center bg-no-repeat -z-10"
+    >
+    </div>
+    <h2 class="my-[0.67em] block isolate font-bold text-4xl text-white">
+      Bienvenidos a la transformación digital
+    </h2>
+    {
+      page.data
+        .slice(0, 1)
+        .map((post) => (
+          <Link
+            class="bg-xkale rounded-lg text-white px-2 py-1 text-xl shadow-xl"
+            text="Leer blog"
+            href={`/blog/${post.slug}/`}
+          />
+        ))
+    }
+  </SectionContainer>
+  <SectionContainer class="xl:py-14" aria-label="New Blog Posts">
+    <!-- <SearchWidget /> -->
+    <ul
+      id="postList"
+      class="grid grid-cols-1 grid-rows-auto gap-10 lg:grid-cols-3 my-10"
+    >
+      {
+        page.data.map((post) => (
+          <PostCard
+            title={post.data.title}
+            url={`/blog/${post.slug}/`}
+            image={post.data.image}
+            authorImage={post.data.authorImage}
+            author={post.data.author}
+            tag={post.data.tag}
+            iconTag={post.data.iconTag}
+          />
+        ))
+      }
+    </ul>
+    <Pagination
+      length={page.lastPage}
+      currentUrl={page.url.current}
+      currentPage={page.currentPage}
+      firstUrl={`/blog/`}
+      prevUrl={page.url.prev}
+      nextUrl={page.url.next}
+      lastUrl={`/blog/${page.lastPage}`}
     />
-  </head>
-  <body>
-    <Analytics />
-    <Header />
-    <main>
-      <Headding text="Blog" />
-      <BlogHelo />
-      <SectionContainer class="xl:py-14" aria-label="New Blog Posts">
-        <!-- <SearchWidget /> -->
-        <ul
-          id="postList"
-          class="grid grid-cols-1 grid-rows-auto gap-10 lg:grid-cols-3 my-10">
-          {
-            page.data.map((post) => (
-              <PostCard
-                title={post.data.title}
-                url={`/blog/${post.slug}/`}
-                image={post.data.image}
-                authorImage={post.data.authorImage}
-                author={post.data.author}
-                tag={post.data.tag}
-                iconTag={post.data.iconTag}
-              />
-            ))
-          }
-        </ul>
-        <Pagination
-          length={page.lastPage}
-          currentUrl={page.url.current}
-          currentPage={page.currentPage}
-          firstUrl={`/blog/`}
-          prevUrl={page.url.prev}
-          nextUrl={page.url.next}
-          lastUrl={`/blog/${page.lastPage}`}
-        />
-      </SectionContainer>
-    </main>
-    <Footer />
-  </body>
-</html>
+  </SectionContainer>
+</Base>

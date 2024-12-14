@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
-import { PATHS } from "../../utils/PATHS";
 import HeaderLink from "./header-link.astro";
+import PATH from "@lib/PATH.json";
 ---
 
 <header>
@@ -9,7 +9,7 @@ import HeaderLink from "./header-link.astro";
   <nav class="nav">
     <div id="menu">
       {
-        PATHS.map((item) => (
+        PATH.map((item) => (
           <HeaderLink href={item.href}>{item.name}</HeaderLink>
         ))
       }

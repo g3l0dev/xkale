@@ -1,24 +1,15 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Headding from '../components/Headding.astro';
-import Analytics from '../components/Analytics.astro';
-import Footer from '../components/Footer.astro';
-import PoliticasDeCookies from '../body/politicas-de-privacidad/politicas-de-cookies.astro';
+import PoliticasDeCookies from "@componnents/body/politicas-de-privacidad/politicas-de-cookies.astro";
+
+import Headding from "@componnents/Headding.astro";
+
+import Base from "@layouts/Base.astro";
 ---
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <BaseHead title="Políticas de privacidad" description="Conoce nuestra experiencia de Políticas de privacidad"/>
-</head>
-<body>
-  <Analytics/>
-  <Header/>
-  <main>
-    <Headding text="Políticas de privacidad"/>
-    <PoliticasDeCookies />
-  </main>
-  <Footer />
-</body>
-</html>
+<Base
+  title="Políticas de privacidad"
+  description="Conoce nuestra experiencia de Políticas de privacidad"
+>
+  <Headding text="Políticas de privacidad" />
+  <PoliticasDeCookies />
+</Base>

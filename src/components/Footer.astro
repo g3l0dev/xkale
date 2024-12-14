@@ -1,7 +1,8 @@
 ---
 import { Icon } from "astro-icon/components";
-import FOOTERDATA, { CONTACTO } from "../data/FOOTERDATA";
+import { CONTACTO } from "../data/FOOTERDATA";
 import Link from "./Link.astro";
+import PATH from "@lib/PATH.json"
 ---
 
 <footer>
@@ -14,7 +15,7 @@ import Link from "./Link.astro";
   <section>
     <Icon name="logo" class="icon" />
     <nav class="links-nav">
-      {FOOTERDATA.map((item) => <Link text={item.name} href={item.path} />)}
+      {PATH.map((item) => <Link text={item.name} href={item.href} />)}
     </nav>
   </section>
   <section class="contact">

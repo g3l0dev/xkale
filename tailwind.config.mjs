@@ -17,6 +17,9 @@ export default {
           200: "#B2A657",
         },
       },
+      backgroundImage: {
+        'blog-cover': "url('/image/1.5.webp')"
+      }
     },
     screens: {
       sm: { min: "320px", max: "639px" },

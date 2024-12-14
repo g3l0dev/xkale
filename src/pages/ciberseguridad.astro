@@ -1,37 +1,17 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-
-import FormCs from '../components/FormCs.astro';
-import Analytics from '../components/Analytics.astro';
-import Headding from '../components/Headding.astro';
-import Footer from '../components/Footer.astro';
-import CsSection from '../body/ciberseguridad/cs-section.astro';
-import CsInfo from '../body/ciberseguridad/cs-info.astro';
+import CsInfo from "@componnents/body/ciberseguridad/cs-info.astro";
+import CsSection from "@componnents/body/ciberseguridad/cs-section.astro";
+import FormCs from "@componnents/FormCs.astro";
+import Headding from "@componnents/Headding.astro";
+import Base from "@layouts/Base.astro";
 ---
 
-<!-- <Layout
-  title="Ciberseguridad"   >
+<Base
+  title="Ciberseguridad"
+  description="Conoce nuestra experiencia de Ciberseguridad"
+>
   <Headding text="Ciberseguridad" />
   <CsSection />
   <CsInfo />
   <FormCs />
-</Layout> -->
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <BaseHead title="Ciberseguridad" description="Conoce nuestra experiencia de Ciberseguridad"/>
-</head>
-<body>
-  <Analytics />
-  <Header/>
-  <main>
-    <Headding text="Ciberseguridad"/>
-    <CsSection/>
-    <CsInfo/>
-    <FormCs/>
-  </main>
-  <Footer/>
-</body>
-</html>
+</Base>

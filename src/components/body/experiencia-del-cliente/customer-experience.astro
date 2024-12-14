@@ -1,5 +1,5 @@
 ---
-import SectionContainer from "../../components/SectionContainer.astro";
+import SectionContainer from "@componnents/SectionContainer.astro";
 
 const CX = [
   {
@@ -27,7 +27,8 @@ const CX = [
 
 <SectionContainer class="h-[160vh] xl:h-[80vh]">
   <div
-    class="grid grid-cols-[repeat(_auto-fit,_minmax(300px,_1fr)_)] gap-[20px] w-full h-full">
+    class="grid grid-cols-[repeat(_auto-fit,_minmax(300px,_1fr)_)] gap-[20px] w-full h-full"
+  >
     {
       CX.map(({ title, url, id }) => (
         <article class="full h-full">
@@ -37,10 +38,12 @@ const CX = [
             </h3>
           </div>
           <div
-            class={`w-full h-full bg-[url('/image/cx/${id}.webp')] bg-center bg-cover bg-no-repeat overflow-hidden group`}>
+            class={`w-full h-full bg-[url('/image/cx/${id}.webp')] bg-center bg-cover bg-no-repeat overflow-hidden group`}
+          >
             <a
               href={url}
-              class="w-full h-full bg-cx/80 flex flex-col justify-center items-center text-white uppercase -translate-x-[100%] group-hover:translate-x-0 transition-all duration-300">
+              class="w-full h-full bg-cx/80 flex flex-col justify-center items-center text-white uppercase -translate-x-[100%] group-hover:translate-x-0 transition-all duration-300"
+            >
               leer más
             </a>
           </div>
