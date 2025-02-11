@@ -3,7 +3,6 @@ import Analytics from "@componnents/Analytics.astro";
 import Footer from "@componnents/Footer.astro";
 import Header from "@componnents/Header.astro";
 import Seo from "@componnents/Seo.astro";
-import type { Fragment } from "react";
 
 interface Props {
   title?: string;
@@ -13,7 +12,7 @@ interface Props {
 const { title, description } = Astro.props as Props;
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <Seo title={title} description={description} />
